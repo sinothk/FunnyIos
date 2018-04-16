@@ -8,20 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		2441DBB02084997800AFFCC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DBAF2084997800AFFCC1 /* AppDelegate.swift */; };
-		2441DBB22084997800AFFCC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DBB12084997800AFFCC1 /* ViewController.swift */; };
-		2441DBB52084997800AFFCC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2441DBB32084997800AFFCC1 /* Main.storyboard */; };
 		2441DBB72084997800AFFCC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2441DBB62084997800AFFCC1 /* Assets.xcassets */; };
-		2441DBBA2084997800AFFCC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2441DBB82084997800AFFCC1 /* LaunchScreen.storyboard */; };
+		24EE7C3F2084FFAA00CE23B0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EE7C3E2084FFAA00CE23B0 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2441DBAC2084997800AFFCC1 /* funny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = funny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2441DBAF2084997800AFFCC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2441DBB12084997800AFFCC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2441DBB42084997800AFFCC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2441DBB62084997800AFFCC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2441DBB92084997800AFFCC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2441DBBB2084997800AFFCC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24EE7C3E2084FFAA00CE23B0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +50,76 @@
 		2441DBAE2084997800AFFCC1 /* funny */ = {
 			isa = PBXGroup;
 			children = (
+				24EE7C342084FCC900CE23B0 /* Classes */,
 				2441DBAF2084997800AFFCC1 /* AppDelegate.swift */,
-				2441DBB12084997800AFFCC1 /* ViewController.swift */,
-				2441DBB32084997800AFFCC1 /* Main.storyboard */,
 				2441DBB62084997800AFFCC1 /* Assets.xcassets */,
-				2441DBB82084997800AFFCC1 /* LaunchScreen.storyboard */,
 				2441DBBB2084997800AFFCC1 /* Info.plist */,
 			);
 			path = funny;
+			sourceTree = "<group>";
+		};
+		24EE7C342084FCC900CE23B0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				24EE7C352084FCFC00CE23B0 /* view */,
+				24EE7C372084FD1000CE23B0 /* viewModel */,
+				24EE7C362084FD0600CE23B0 /* model */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		24EE7C352084FCFC00CE23B0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				24EE7C3B2084FDB300CE23B0 /* discover */,
+				24EE7C3A2084FDA600CE23B0 /* user */,
+				24EE7C392084FD9A00CE23B0 /* comm */,
+				24EE7C382084FD8D00CE23B0 /* main */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		24EE7C362084FD0600CE23B0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		24EE7C372084FD1000CE23B0 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		24EE7C382084FD8D00CE23B0 /* main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		24EE7C392084FD9A00CE23B0 /* comm */ = {
+			isa = PBXGroup;
+			children = (
+				24EE7C3E2084FFAA00CE23B0 /* WelcomeViewController.swift */,
+			);
+			path = comm;
+			sourceTree = "<group>";
+		};
+		24EE7C3A2084FDA600CE23B0 /* user */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
+		24EE7C3B2084FDB300CE23B0 /* discover */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = discover;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2441DBBA2084997800AFFCC1 /* LaunchScreen.storyboard in Resources */,
 				2441DBB72084997800AFFCC1 /* Assets.xcassets in Resources */,
-				2441DBB52084997800AFFCC1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,31 +192,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2441DBB22084997800AFFCC1 /* ViewController.swift in Sources */,
+				24EE7C3F2084FFAA00CE23B0 /* WelcomeViewController.swift in Sources */,
 				2441DBB02084997800AFFCC1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		2441DBB32084997800AFFCC1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2441DBB42084997800AFFCC1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2441DBB82084997800AFFCC1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2441DBB92084997800AFFCC1 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2441DBBC2084997800AFFCC1 /* Debug */ = {
@@ -274,6 +311,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MW2SCWGAW2;
 				INFOPLIST_FILE = funny/Info.plist;
@@ -289,6 +327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MW2SCWGAW2;
 				INFOPLIST_FILE = funny/Info.plist;
