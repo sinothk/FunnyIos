@@ -17,12 +17,14 @@ class WelcomeViewController: UIViewController {
 //        return iv
 //    }()
     
-    private lazy var backImageView: UIImageView = UIImageView(image: UIImage(named: "wel_1"))
+    private lazy var backImageView: UIImageView = UIImageView(image: UIImage(named: "LaunchImage"))
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view = backImageView
+        view.backgroundColor = UIColor.orange
+        
+//        view = UIView(named: UIColor.orange)
         // Do any additional setup after loading the view.
     }
 }
