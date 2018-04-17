@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MineViewController" customModule="funny" customModuleProvider="target">
             <connections>
+                <outlet property="dd" destination="apF-Gs-m45" id="kIJ-mV-UCo"/>
                 <outlet property="okBtn" destination="mTf-jv-qBg" id="JZE-eg-6UU"/>
                 <outlet property="view" destination="aWM-t0-Yyn" id="acs-7F-JaS"/>
             </connections>
@@ -25,6 +26,13 @@
                     <rect key="frame" x="30" y="50" width="315" height="30"/>
                     <state key="normal" title="Button"/>
                 </button>
+                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="apF-Gs-m45">
+                    <rect key="frame" x="131" y="144" width="97" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>

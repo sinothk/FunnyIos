@@ -10,6 +10,7 @@ import UIKit
 
 class MineViewController: UIViewController {
 
+    @IBOutlet weak var dd: UITextField!
     @IBOutlet weak var okBtn: UIButton!
     
     override func viewDidLoad() {
