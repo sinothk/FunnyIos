@@ -15,7 +15,7 @@ class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        goLogin.setTitle("登录", for: UIControlState.normal)
+        goLogin.setTitle("现在登录", for: UIControlState.normal)
         goLogin.addTarget(self, action: #selector(startUse), for: .touchUpInside)
     }
     
