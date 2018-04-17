@@ -21,18 +21,45 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window = UIWindow(frame:UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
-        window?.rootViewController = WelcomeViewController()
+        window?.rootViewController = NewVersionViewController()
         window?.makeKeyAndVisible()
+        
+        // 监听通知
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: WBSwitchRootViewControllerNotification),
+                                               object:nil,queue:nil,using:
+            {[weak self](notification) -> Void in
+                
+//                var vc:UIViewController? = nil
+                
+//                if notification.object == nil{
+//                    vc = LoginViewController()
+//                }else{
+//                    vc = MainViewController()
+//                }
+           
+                let vc = MainViewController()//notification.object != nil ? WelcomeViewController() : MainViewController()
+                
+                // 跳转到Main
+                self?.window?.rootViewController = vc
+        })
         
         return true
     }
 
+    // 注销
+    deinit {
+        NotificationCenter.default.removeObserver(self,
+                                                  name: NSNotification.Name(
+                                                    rawValue: WBSwitchRootViewControllerNotification),
+                                                  object: nil)
+    }
+    
     //MARK:设置全局外观:一旦设置，全局控件有效。
     private func setupAppearance(){
         // 标题部分
-//        UINavigationBar.appearance().tintColor = UIColor.orange
-//        // tab颜色
-//        UITabBar.appearance().tintColor = UIColor.orange
+        UINavigationBar.appearance().tintColor = UIColor.orange
+        // tab颜色
+        UITabBar.appearance().tintColor = UIColor.orange
     }
     
 //    func applicationWillResignActive(_ application: UIApplication) {

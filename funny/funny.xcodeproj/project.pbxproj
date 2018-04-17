@@ -10,6 +10,16 @@
 		2441DBB02084997800AFFCC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DBAF2084997800AFFCC1 /* AppDelegate.swift */; };
 		2441DBB72084997800AFFCC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2441DBB62084997800AFFCC1 /* Assets.xcassets */; };
 		24EE7C3F2084FFAA00CE23B0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EE7C3E2084FFAA00CE23B0 /* WelcomeViewController.swift */; };
+		24F2D8712085A06B0025E6B5 /* NewVersionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D8702085A06B0025E6B5 /* NewVersionViewController.swift */; };
+		24F2D8792085A5630025E6B5 /* UIButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D8782085A5630025E6B5 /* UIButtonView.swift */; };
+		24F2D87B2085A56E0025E6B5 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D87A2085A56E0025E6B5 /* UILabel.swift */; };
+		24F2D87D2085A5AD0025E6B5 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D87C2085A5AD0025E6B5 /* Common.swift */; };
+		24F2D8802085A60B0025E6B5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D87F2085A60B0025E6B5 /* MainViewController.swift */; };
+		24F2D8822085C4AD0025E6B5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D8812085C4AD0025E6B5 /* LoginViewController.swift */; };
+		24F2D8902085E2010025E6B5 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D88E2085E2010025E6B5 /* DiscoverViewController.swift */; };
+		24F2D8942085E2820025E6B5 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D8922085E2820025E6B5 /* MineViewController.swift */; };
+		24F2D8952085E2820025E6B5 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24F2D8932085E2820025E6B5 /* MineViewController.xib */; };
+		24F2D8982085E53E0025E6B5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D8972085E53E0025E6B5 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +28,16 @@
 		2441DBB62084997800AFFCC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2441DBBB2084997800AFFCC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24EE7C3E2084FFAA00CE23B0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		24F2D8702085A06B0025E6B5 /* NewVersionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVersionViewController.swift; sourceTree = "<group>"; };
+		24F2D8782085A5630025E6B5 /* UIButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIButtonView.swift; path = ../../../../../../../../Gitee/Inspection/Inspection/Inspection/Classes/Tools/UIButtonView.swift; sourceTree = "<group>"; };
+		24F2D87A2085A56E0025E6B5 /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UILabel.swift; path = ../../../../../../../../Gitee/Inspection/Inspection/Inspection/Classes/Tools/Extension/UILabel.swift; sourceTree = "<group>"; };
+		24F2D87C2085A5AD0025E6B5 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = ../../../../../../../Gitee/Inspection/Inspection/Inspection/Classes/Tools/Common.swift; sourceTree = "<group>"; };
+		24F2D87F2085A60B0025E6B5 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = "../../../../../../../../Gitee/Inspection/Inspection/Inspection/Classes/View(试图和控制器)/Main/MainViewController.swift"; sourceTree = "<group>"; };
+		24F2D8812085C4AD0025E6B5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		24F2D88E2085E2010025E6B5 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		24F2D8922085E2820025E6B5 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		24F2D8932085E2820025E6B5 /* MineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
+		24F2D8972085E53E0025E6B5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +84,7 @@
 				24EE7C352084FCFC00CE23B0 /* view */,
 				24EE7C372084FD1000CE23B0 /* viewModel */,
 				24EE7C362084FD0600CE23B0 /* model */,
+				24F2D8772085A4DD0025E6B5 /* tools */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -71,6 +92,8 @@
 		24EE7C352084FCFC00CE23B0 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				24F2D8832085CBB90025E6B5 /* base */,
+				24F2D8962085E50A0025E6B5 /* home */,
 				24EE7C3B2084FDB300CE23B0 /* discover */,
 				24EE7C3A2084FDA600CE23B0 /* user */,
 				24EE7C392084FD9A00CE23B0 /* comm */,
@@ -96,6 +119,7 @@
 		24EE7C382084FD8D00CE23B0 /* main */ = {
 			isa = PBXGroup;
 			children = (
+				24F2D87F2085A60B0025E6B5 /* MainViewController.swift */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -104,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				24EE7C3E2084FFAA00CE23B0 /* WelcomeViewController.swift */,
+				24F2D8702085A06B0025E6B5 /* NewVersionViewController.swift */,
+				24F2D8812085C4AD0025E6B5 /* LoginViewController.swift */,
 			);
 			path = comm;
 			sourceTree = "<group>";
@@ -111,6 +137,8 @@
 		24EE7C3A2084FDA600CE23B0 /* user */ = {
 			isa = PBXGroup;
 			children = (
+				24F2D8922085E2820025E6B5 /* MineViewController.swift */,
+				24F2D8932085E2820025E6B5 /* MineViewController.xib */,
 			);
 			path = user;
 			sourceTree = "<group>";
@@ -118,8 +146,42 @@
 		24EE7C3B2084FDB300CE23B0 /* discover */ = {
 			isa = PBXGroup;
 			children = (
+				24F2D88E2085E2010025E6B5 /* DiscoverViewController.swift */,
 			);
 			path = discover;
+			sourceTree = "<group>";
+		};
+		24F2D8722085A2400025E6B5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				24F2D87A2085A56E0025E6B5 /* UILabel.swift */,
+				24F2D8782085A5630025E6B5 /* UIButtonView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		24F2D8772085A4DD0025E6B5 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				24F2D8722085A2400025E6B5 /* Extension */,
+				24F2D87C2085A5AD0025E6B5 /* Common.swift */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		24F2D8832085CBB90025E6B5 /* base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		24F2D8962085E50A0025E6B5 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				24F2D8972085E53E0025E6B5 /* HomeViewController.swift */,
+			);
+			path = home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2441DBB72084997800AFFCC1 /* Assets.xcassets in Resources */,
+				24F2D8952085E2820025E6B5 /* MineViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,8 +255,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24F2D8802085A60B0025E6B5 /* MainViewController.swift in Sources */,
+				24F2D8942085E2820025E6B5 /* MineViewController.swift in Sources */,
+				24F2D87B2085A56E0025E6B5 /* UILabel.swift in Sources */,
+				24F2D8712085A06B0025E6B5 /* NewVersionViewController.swift in Sources */,
 				24EE7C3F2084FFAA00CE23B0 /* WelcomeViewController.swift in Sources */,
+				24F2D8822085C4AD0025E6B5 /* LoginViewController.swift in Sources */,
+				24F2D8792085A5630025E6B5 /* UIButtonView.swift in Sources */,
+				24F2D8982085E53E0025E6B5 /* HomeViewController.swift in Sources */,
+				24F2D87D2085A5AD0025E6B5 /* Common.swift in Sources */,
 				2441DBB02084997800AFFCC1 /* AppDelegate.swift in Sources */,
+				24F2D8902085E2010025E6B5 /* DiscoverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
