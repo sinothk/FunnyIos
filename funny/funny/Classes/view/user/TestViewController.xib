@@ -12,6 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestViewController" customModule="funny" customModuleProvider="target">
             <connections>
+                <outlet property="dd" destination="nZ2-ab-gHX" id="K4W-NC-fhp"/>
+                <outlet property="dsa" destination="tFa-AX-wyY" id="Dmb-Gt-Z0H"/>
                 <outlet property="goLogin" destination="lyr-20-i0E" id="jY0-ZW-8qU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

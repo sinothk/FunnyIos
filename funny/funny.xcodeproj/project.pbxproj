@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2426CA222086633100EDC2A0 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2426CA202086633100EDC2A0 /* MineViewController.swift */; };
-		2426CA232086633100EDC2A0 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2426CA212086633100EDC2A0 /* MineViewController.xib */; };
 		2426CA26208668E600EDC2A0 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2426CA24208668E600EDC2A0 /* TestViewController.swift */; };
 		2426CA27208668E600EDC2A0 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2426CA25208668E600EDC2A0 /* TestViewController.xib */; };
+		243CEED520871D52007650FB /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243CEED420871D52007650FB /* MineViewController.xib */; };
 		2441DBB02084997800AFFCC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DBAF2084997800AFFCC1 /* AppDelegate.swift */; };
 		2441DBB72084997800AFFCC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2441DBB62084997800AFFCC1 /* Assets.xcassets */; };
 		24EE7C3F2084FFAA00CE23B0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EE7C3E2084FFAA00CE23B0 /* WelcomeViewController.swift */; };
@@ -26,9 +26,9 @@
 
 /* Begin PBXFileReference section */
 		2426CA202086633100EDC2A0 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
-		2426CA212086633100EDC2A0 /* MineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
 		2426CA24208668E600EDC2A0 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		2426CA25208668E600EDC2A0 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		243CEED420871D52007650FB /* MineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MineViewController.xib; path = ../../../../../../../../../../Desktop/MineViewController.xib; sourceTree = "<group>"; };
 		2441DBAC2084997800AFFCC1 /* funny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = funny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2441DBAF2084997800AFFCC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2441DBB62084997800AFFCC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				2426CA202086633100EDC2A0 /* MineViewController.swift */,
-				2426CA212086633100EDC2A0 /* MineViewController.xib */,
+				243CEED420871D52007650FB /* MineViewController.xib */,
 				2426CA24208668E600EDC2A0 /* TestViewController.swift */,
 				2426CA25208668E600EDC2A0 /* TestViewController.xib */,
 			);
@@ -251,7 +251,7 @@
 			files = (
 				2441DBB72084997800AFFCC1 /* Assets.xcassets in Resources */,
 				2426CA27208668E600EDC2A0 /* TestViewController.xib in Resources */,
-				2426CA232086633100EDC2A0 /* MineViewController.xib in Resources */,
+				243CEED520871D52007650FB /* MineViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
