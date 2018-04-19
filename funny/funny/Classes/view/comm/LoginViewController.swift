@@ -9,33 +9,47 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
     @IBOutlet weak var registerBtn: UIBarButtonItem!
+    @IBOutlet weak var avatarIv: UIImageView!
+    @IBOutlet weak var userCodeTxt: UITextField!
+    @IBOutlet weak var userPwdTxt: UITextField!
+    
+    @IBOutlet weak var loginBtn: UIButton!
+    @IBOutlet weak var findPwdBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        registerBtn.action = #selector(titleBarRightBtn)
+        setupUI()
     }
-
+    // MARK: ->初始化界面
+    func setupUI() -> Void {
+        avatarIv.image = UIImage(named:"NewVersion3")
+        avatarIv.layer.cornerRadius = 40
+        avatarIv.layer.masksToBounds = true
+        
+        userCodeTxt.text = "381518188@qq.com"
+        
+        userPwdTxt.text = "123456"
+        userPwdTxt.isSecureTextEntry = true
+        
+        registerBtn.action = #selector(titleBarRightBtn)
+        loginBtn.addTarget(self, action: #selector(login), for: UIControlEvents.touchUpInside)
+    }
+    
     @objc func titleBarRightBtn(){
         print("注册")
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @objc func login(){
+        
+        
+        UserViewModel.shared.login(accountStr: "", pwdStr: "") { (isOk) in
+            if isOk {
+                print("isOk")
+            } else{
+                print("isNotOk")
+            }
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
