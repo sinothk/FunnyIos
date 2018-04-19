@@ -10,6 +10,8 @@
 		2426CA222086633100EDC2A0 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2426CA202086633100EDC2A0 /* MineViewController.swift */; };
 		2426CA26208668E600EDC2A0 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2426CA24208668E600EDC2A0 /* TestViewController.swift */; };
 		2426CA27208668E600EDC2A0 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2426CA25208668E600EDC2A0 /* TestViewController.xib */; };
+		2429D5F4208848B10031872F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2429D5F2208848B10031872F /* LoginViewController.swift */; };
+		2429D5F5208848B10031872F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2429D5F3208848B10031872F /* LoginViewController.xib */; };
 		243CEEDD20874772007650FB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243CEEDC20874772007650FB /* MainViewController.swift */; };
 		243CEEEB20874BAD007650FB /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243CEEE120874BAD007650FB /* MyTableViewController.swift */; };
 		243CEEEC20874BAD007650FB /* GIFAnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243CEEE220874BAD007650FB /* GIFAnimatedImageView.swift */; };
@@ -34,10 +36,9 @@
 		24C106CF208838DF007D7E93 /* HandyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24C106BA20883876007D7E93 /* HandyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		24EE7C3F2084FFAA00CE23B0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EE7C3E2084FFAA00CE23B0 /* WelcomeViewController.swift */; };
 		24F2D8712085A06B0025E6B5 /* NewVersionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D8702085A06B0025E6B5 /* NewVersionViewController.swift */; };
-		24F2D8792085A5630025E6B5 /* UIButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D8782085A5630025E6B5 /* UIButtonView.swift */; };
+		24F2D8792085A5630025E6B5 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D8782085A5630025E6B5 /* UIButton.swift */; };
 		24F2D87B2085A56E0025E6B5 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D87A2085A56E0025E6B5 /* UILabel.swift */; };
 		24F2D87D2085A5AD0025E6B5 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D87C2085A5AD0025E6B5 /* Common.swift */; };
-		24F2D8822085C4AD0025E6B5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D8812085C4AD0025E6B5 /* LoginViewController.swift */; };
 		24F2D8902085E2010025E6B5 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D88E2085E2010025E6B5 /* DiscoverViewController.swift */; };
 		24F2D8982085E53E0025E6B5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D8972085E53E0025E6B5 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
@@ -126,6 +127,8 @@
 		2426CA202086633100EDC2A0 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		2426CA24208668E600EDC2A0 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		2426CA25208668E600EDC2A0 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		2429D5F2208848B10031872F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2429D5F3208848B10031872F /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		243CEEDC20874772007650FB /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		243CEEE120874BAD007650FB /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		243CEEE220874BAD007650FB /* GIFAnimatedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFAnimatedImageView.swift; sourceTree = "<group>"; };
@@ -151,10 +154,9 @@
 		24C106AE20883875007D7E93 /* HandyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HandyJSON.xcodeproj; path = "../../../../plugins/HandyJSON-master/HandyJSON.xcodeproj"; sourceTree = "<group>"; };
 		24EE7C3E2084FFAA00CE23B0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		24F2D8702085A06B0025E6B5 /* NewVersionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVersionViewController.swift; sourceTree = "<group>"; };
-		24F2D8782085A5630025E6B5 /* UIButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIButtonView.swift; path = ../../../../../../../../Gitee/Inspection/Inspection/Inspection/Classes/Tools/UIButtonView.swift; sourceTree = "<group>"; };
+		24F2D8782085A5630025E6B5 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIButton.swift; path = ../../../../../../../../Gitee/Inspection/Inspection/Inspection/Classes/Tools/UIButton.swift; sourceTree = "<group>"; };
 		24F2D87A2085A56E0025E6B5 /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UILabel.swift; path = ../../../../../../../../Gitee/Inspection/Inspection/Inspection/Classes/Tools/Extension/UILabel.swift; sourceTree = "<group>"; };
 		24F2D87C2085A5AD0025E6B5 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = ../../../../../../../Gitee/Inspection/Inspection/Inspection/Classes/Tools/Common.swift; sourceTree = "<group>"; };
-		24F2D8812085C4AD0025E6B5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		24F2D88E2085E2010025E6B5 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		24F2D8972085E53E0025E6B5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -323,7 +325,8 @@
 			children = (
 				24EE7C3E2084FFAA00CE23B0 /* WelcomeViewController.swift */,
 				24F2D8702085A06B0025E6B5 /* NewVersionViewController.swift */,
-				24F2D8812085C4AD0025E6B5 /* LoginViewController.swift */,
+				2429D5F2208848B10031872F /* LoginViewController.swift */,
+				2429D5F3208848B10031872F /* LoginViewController.xib */,
 			);
 			path = comm;
 			sourceTree = "<group>";
@@ -341,7 +344,7 @@
 			isa = PBXGroup;
 			children = (
 				24F2D87A2085A56E0025E6B5 /* UILabel.swift */,
-				24F2D8782085A5630025E6B5 /* UIButtonView.swift */,
+				24F2D8782085A5630025E6B5 /* UIButton.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -496,6 +499,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2429D5F5208848B10031872F /* LoginViewController.xib in Resources */,
 				2441DBB72084997800AFFCC1 /* Assets.xcassets in Resources */,
 				2426CA27208668E600EDC2A0 /* TestViewController.xib in Resources */,
 				24C1069B20882BF9007D7E93 /* MineViewController.xib in Resources */,
@@ -509,6 +513,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2429D5F4208848B10031872F /* LoginViewController.swift in Sources */,
 				243CEEDD20874772007650FB /* MainViewController.swift in Sources */,
 				2426CA222086633100EDC2A0 /* MineViewController.swift in Sources */,
 				243CEEEC20874BAD007650FB /* GIFAnimatedImageView.swift in Sources */,
@@ -523,8 +528,7 @@
 				24C106A82088373B007D7E93 /* UserEntity.swift in Sources */,
 				243CEEF420874BAD007650FB /* CoreTextHeaderFooter.swift in Sources */,
 				24EE7C3F2084FFAA00CE23B0 /* WelcomeViewController.swift in Sources */,
-				24F2D8822085C4AD0025E6B5 /* LoginViewController.swift in Sources */,
-				24F2D8792085A5630025E6B5 /* UIButtonView.swift in Sources */,
+				24F2D8792085A5630025E6B5 /* UIButton.swift in Sources */,
 				243CEEFB20874C94007650FB /* StatusCellBottomView.swift in Sources */,
 				243CEEF320874BAD007650FB /* UIScrollView+SYRefresh.swift in Sources */,
 				243CEEED20874BAD007650FB /* GifImagesHeaderFooter.swift in Sources */,

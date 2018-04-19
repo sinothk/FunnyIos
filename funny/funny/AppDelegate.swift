@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window = UIWindow(frame:UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
-        window?.rootViewController = MainViewController() //NewVersionViewController()
+        window?.rootViewController = LoginViewController() //NewVersionViewController()
         window?.makeKeyAndVisible()
         
         // 监听通知
@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //                    vc = MainViewController()
 //                }
            
-                let vc = MainViewController()//notification.object != nil ? WelcomeViewController() : MainViewController()
+                let vc = MineViewController()//notification.object != nil ? WelcomeViewController() : MainViewController()
                 
                 // 跳转到Main
                 self?.window?.rootViewController = vc

@@ -18,6 +18,8 @@ class MineViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title  = "个人信息"
+        
         avatar.image = UIImage(named:"NewVersion3")
         avatar.layer.cornerRadius = 30
         avatar.layer.masksToBounds = true
