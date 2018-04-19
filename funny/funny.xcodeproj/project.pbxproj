@@ -10,7 +10,6 @@
 		2426CA222086633100EDC2A0 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2426CA202086633100EDC2A0 /* MineViewController.swift */; };
 		2426CA26208668E600EDC2A0 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2426CA24208668E600EDC2A0 /* TestViewController.swift */; };
 		2426CA27208668E600EDC2A0 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2426CA25208668E600EDC2A0 /* TestViewController.xib */; };
-		243CEED520871D52007650FB /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243CEED420871D52007650FB /* MineViewController.xib */; };
 		243CEEDD20874772007650FB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243CEEDC20874772007650FB /* MainViewController.swift */; };
 		243CEEEB20874BAD007650FB /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243CEEE120874BAD007650FB /* MyTableViewController.swift */; };
 		243CEEEC20874BAD007650FB /* GIFAnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243CEEE220874BAD007650FB /* GIFAnimatedImageView.swift */; };
@@ -29,6 +28,7 @@
 		243CEF0120874D54007650FB /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243CEF0020874D54007650FB /* StatusViewModel.swift */; };
 		2441DBB02084997800AFFCC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DBAF2084997800AFFCC1 /* AppDelegate.swift */; };
 		2441DBB72084997800AFFCC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2441DBB62084997800AFFCC1 /* Assets.xcassets */; };
+		24C1069B20882BF9007D7E93 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C1069A20882BF9007D7E93 /* MineViewController.xib */; };
 		24EE7C3F2084FFAA00CE23B0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EE7C3E2084FFAA00CE23B0 /* WelcomeViewController.swift */; };
 		24F2D8712085A06B0025E6B5 /* NewVersionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D8702085A06B0025E6B5 /* NewVersionViewController.swift */; };
 		24F2D8792085A5630025E6B5 /* UIButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D8782085A5630025E6B5 /* UIButtonView.swift */; };
@@ -39,11 +39,69 @@
 		24F2D8982085E53E0025E6B5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D8972085E53E0025E6B5 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		24C1068A208821AD007D7E93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24C1067F208821AC007D7E93 /* HandyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 21520C441D3341B200F53111;
+			remoteInfo = "HandyJSON iOS";
+		};
+		24C1068C208821AD007D7E93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24C1067F208821AC007D7E93 /* HandyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 21520C5B1D3344A900F53111;
+			remoteInfo = HandyJSONDemo;
+		};
+		24C1068E208821AD007D7E93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24C1067F208821AC007D7E93 /* HandyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 217B046D1D571B9F0035A8E2;
+			remoteInfo = "HandyJSON iOS Tests";
+		};
+		24C10690208821AD007D7E93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24C1067F208821AC007D7E93 /* HandyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 393E0F9B1DA1650E00B3BC12;
+			remoteInfo = "HandyJSON watchOS";
+		};
+		24C10692208821AD007D7E93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24C1067F208821AC007D7E93 /* HandyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 393E0FB11DA2441E00B3BC12;
+			remoteInfo = "HandyJSON tvOS";
+		};
+		24C10694208821AD007D7E93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24C1067F208821AC007D7E93 /* HandyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 393E0FB91DA2441E00B3BC12;
+			remoteInfo = "HandyJSON tvOS Tests";
+		};
+		24C10696208821AD007D7E93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24C1067F208821AC007D7E93 /* HandyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 393E0FE11DA2494F00B3BC12;
+			remoteInfo = "HandyJSON macOS";
+		};
+		24C10698208821AD007D7E93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24C1067F208821AC007D7E93 /* HandyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 393E0FE91DA2494F00B3BC12;
+			remoteInfo = "HandyJSON macOS Tests";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		2426CA202086633100EDC2A0 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		2426CA24208668E600EDC2A0 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		2426CA25208668E600EDC2A0 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
-		243CEED420871D52007650FB /* MineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MineViewController.xib; path = ../../../../../../../../../../Desktop/MineViewController.xib; sourceTree = "<group>"; };
 		243CEEDC20874772007650FB /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		243CEEE120874BAD007650FB /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		243CEEE220874BAD007650FB /* GIFAnimatedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFAnimatedImageView.swift; sourceTree = "<group>"; };
@@ -64,6 +122,8 @@
 		2441DBAF2084997800AFFCC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2441DBB62084997800AFFCC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2441DBBB2084997800AFFCC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24C1067F208821AC007D7E93 /* HandyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HandyJSON.xcodeproj; path = "../../../../plugins/HandyJSON-master/HandyJSON.xcodeproj"; sourceTree = "<group>"; };
+		24C1069A20882BF9007D7E93 /* MineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
 		24EE7C3E2084FFAA00CE23B0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		24F2D8702085A06B0025E6B5 /* NewVersionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVersionViewController.swift; sourceTree = "<group>"; };
 		24F2D8782085A5630025E6B5 /* UIButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIButtonView.swift; path = ../../../../../../../../Gitee/Inspection/Inspection/Inspection/Classes/Tools/UIButtonView.swift; sourceTree = "<group>"; };
@@ -89,7 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				2426CA202086633100EDC2A0 /* MineViewController.swift */,
-				243CEED420871D52007650FB /* MineViewController.xib */,
+				24C1069A20882BF9007D7E93 /* MineViewController.xib */,
 				2426CA24208668E600EDC2A0 /* TestViewController.swift */,
 				2426CA25208668E600EDC2A0 /* TestViewController.xib */,
 			);
@@ -142,6 +202,7 @@
 		2441DBA32084997800AFFCC1 = {
 			isa = PBXGroup;
 			children = (
+				24C1067F208821AC007D7E93 /* HandyJSON.xcodeproj */,
 				2441DBAE2084997800AFFCC1 /* funny */,
 				2441DBAD2084997800AFFCC1 /* Products */,
 			);
@@ -165,6 +226,21 @@
 				2441DBBB2084997800AFFCC1 /* Info.plist */,
 			);
 			path = funny;
+			sourceTree = "<group>";
+		};
+		24C10680208821AC007D7E93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24C1068B208821AD007D7E93 /* HandyJSON.framework */,
+				24C1068D208821AD007D7E93 /* HandyJSONDemo.app */,
+				24C1068F208821AD007D7E93 /* HandyJSON iOS Tests.xctest */,
+				24C10691208821AD007D7E93 /* HandyJSON.framework */,
+				24C10693208821AD007D7E93 /* HandyJSON.framework */,
+				24C10695208821AD007D7E93 /* HandyJSON tvOS Tests.xctest */,
+				24C10697208821AD007D7E93 /* HandyJSON.framework */,
+				24C10699208821AD007D7E93 /* HandyJSON macOS Tests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		24EE7C342084FCC900CE23B0 /* Classes */ = {
@@ -314,12 +390,77 @@
 			mainGroup = 2441DBA32084997800AFFCC1;
 			productRefGroup = 2441DBAD2084997800AFFCC1 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 24C10680208821AC007D7E93 /* Products */;
+					ProjectRef = 24C1067F208821AC007D7E93 /* HandyJSON.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2441DBAB2084997800AFFCC1 /* funny */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		24C1068B208821AD007D7E93 /* HandyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HandyJSON.framework;
+			remoteRef = 24C1068A208821AD007D7E93 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		24C1068D208821AD007D7E93 /* HandyJSONDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HandyJSONDemo.app;
+			remoteRef = 24C1068C208821AD007D7E93 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		24C1068F208821AD007D7E93 /* HandyJSON iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "HandyJSON iOS Tests.xctest";
+			remoteRef = 24C1068E208821AD007D7E93 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		24C10691208821AD007D7E93 /* HandyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HandyJSON.framework;
+			remoteRef = 24C10690208821AD007D7E93 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		24C10693208821AD007D7E93 /* HandyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HandyJSON.framework;
+			remoteRef = 24C10692208821AD007D7E93 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		24C10695208821AD007D7E93 /* HandyJSON tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "HandyJSON tvOS Tests.xctest";
+			remoteRef = 24C10694208821AD007D7E93 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		24C10697208821AD007D7E93 /* HandyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HandyJSON.framework;
+			remoteRef = 24C10696208821AD007D7E93 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		24C10699208821AD007D7E93 /* HandyJSON macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "HandyJSON macOS Tests.xctest";
+			remoteRef = 24C10698208821AD007D7E93 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2441DBAA2084997800AFFCC1 /* Resources */ = {
@@ -328,7 +469,7 @@
 			files = (
 				2441DBB72084997800AFFCC1 /* Assets.xcassets in Resources */,
 				2426CA27208668E600EDC2A0 /* TestViewController.xib in Resources */,
-				243CEED520871D52007650FB /* MineViewController.xib in Resources */,
+				24C1069B20882BF9007D7E93 /* MineViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

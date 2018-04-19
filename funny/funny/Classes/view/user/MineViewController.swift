@@ -9,32 +9,27 @@
 import UIKit
 
 class MineViewController: UIViewController {
-
     @IBOutlet weak var avatar: UIImageView!
     @IBOutlet weak var nicknameLabel: UILabel!
     @IBOutlet weak var sexImageView: UIImageView!
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var editBtn: UIButton!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         avatar.image = UIImage(named:"NewVersion3")
         avatar.layer.cornerRadius = 30
         avatar.layer.masksToBounds = true
-        
-        nicknameLabel.text = "倪大密"
+
+        nicknameLabel.text = "倪大密倪大密倪大密倪大密倪大密倪大密倪大密倪大密倪大密倪大密倪大密倪大密倪大密倪大密"
         nicknameLabel.textColor = themeTextColor
-        
-        ageLabel.text = "28"
+
+        ageLabel.text = "18"
         ageLabel.textColor = themeColor
-        
+
         sexImageView.image = UIImage(named:"ic_weibouser_female")
-        
-//        nicknameLabel.setTitle("SINOTHK", for:UIControlState.normal)
-        
-//        okBtn.backgroundColor = UIColor.orange
-//
+
         editBtn.addTarget(self, action: #selector(startUse), for: .touchUpInside)
     }
     
