@@ -10,12 +10,18 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var registerBtn: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        registerBtn.action = #selector(titleBarRightBtn)
     }
 
+    @objc func titleBarRightBtn(){
+        print("注册")
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
