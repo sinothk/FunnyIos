@@ -30,9 +30,10 @@
 		243CEF0120874D54007650FB /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243CEF0020874D54007650FB /* StatusViewModel.swift */; };
 		2441DBB02084997800AFFCC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DBAF2084997800AFFCC1 /* AppDelegate.swift */; };
 		2441DBB72084997800AFFCC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2441DBB62084997800AFFCC1 /* Assets.xcassets */; };
-		24BD736A20887BFD00C7ECE4 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD736920887BFD00C7ECE4 /* UserViewModel.swift */; };
+		24BD736A20887BFD00C7ECE4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD736920887BFD00C7ECE4 /* LoginViewModel.swift */; };
 		24BD738820888D8800C7ECE4 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD738720888D8800C7ECE4 /* Toast.swift */; };
 		24BD738A20888EA800C7ECE4 /* readMe.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24BD738920888EA800C7ECE4 /* readMe.strings */; };
+		24BD738D208899E900C7ECE4 /* NetworkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD738C208899E900C7ECE4 /* NetworkUtil.swift */; };
 		24C1069B20882BF9007D7E93 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C1069A20882BF9007D7E93 /* MineViewController.xib */; };
 		24C106A82088373B007D7E93 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C106A72088373B007D7E93 /* UserEntity.swift */; };
 		24C106CE208838DF007D7E93 /* HandyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C106BA20883876007D7E93 /* HandyJSON.framework */; };
@@ -152,9 +153,10 @@
 		2441DBAF2084997800AFFCC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2441DBB62084997800AFFCC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2441DBBB2084997800AFFCC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24BD736920887BFD00C7ECE4 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		24BD736920887BFD00C7ECE4 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		24BD738720888D8800C7ECE4 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		24BD738920888EA800C7ECE4 /* readMe.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = readMe.strings; sourceTree = "<group>"; };
+		24BD738C208899E900C7ECE4 /* NetworkUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtil.swift; sourceTree = "<group>"; };
 		24C1069A20882BF9007D7E93 /* MineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
 		24C106A72088373B007D7E93 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		24C106AE20883875007D7E93 /* HandyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HandyJSON.xcodeproj; path = "../../../../plugins/HandyJSON-master/HandyJSON.xcodeproj"; sourceTree = "<group>"; };
@@ -272,6 +274,22 @@
 			path = Toast;
 			sourceTree = "<group>";
 		};
+		24BD738B208899B600C7ECE4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				24BD738C208899E900C7ECE4 /* NetworkUtil.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		24BD738E20889B8C00C7ECE4 /* user */ = {
+			isa = PBXGroup;
+			children = (
+				24BD736920887BFD00C7ECE4 /* LoginViewModel.swift */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
 		24C106AF20883875007D7E93 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -323,8 +341,8 @@
 		24EE7C372084FD1000CE23B0 /* viewModel */ = {
 			isa = PBXGroup;
 			children = (
+				24BD738E20889B8C00C7ECE4 /* user */,
 				243CEF0020874D54007650FB /* StatusViewModel.swift */,
-				24BD736920887BFD00C7ECE4 /* UserViewModel.swift */,
 			);
 			path = viewModel;
 			sourceTree = "<group>";
@@ -369,6 +387,7 @@
 		24F2D8772085A4DD0025E6B5 /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				24BD738B208899B600C7ECE4 /* Network */,
 				24F2D8722085A2400025E6B5 /* Extension */,
 				24F2D87C2085A5AD0025E6B5 /* Common.swift */,
 			);
@@ -532,7 +551,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2429D5F4208848B10031872F /* LoginViewController.swift in Sources */,
-				24BD736A20887BFD00C7ECE4 /* UserViewModel.swift in Sources */,
+				24BD738D208899E900C7ECE4 /* NetworkUtil.swift in Sources */,
+				24BD736A20887BFD00C7ECE4 /* LoginViewModel.swift in Sources */,
 				243CEEDD20874772007650FB /* MainViewController.swift in Sources */,
 				2426CA222086633100EDC2A0 /* MineViewController.swift in Sources */,
 				243CEEEC20874BAD007650FB /* GIFAnimatedImageView.swift in Sources */,

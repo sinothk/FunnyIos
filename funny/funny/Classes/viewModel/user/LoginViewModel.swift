@@ -6,10 +6,26 @@
 //  Copyright © 2018年 贵州中科恒运. All rights reserved.
 //
 
-import Foundation
-class UserViewModel{
-    static let shared = UserViewModel()
+import UIKit
+
+class LoginViewModel{
+    static let shared = LoginViewModel()
     
+    func checkEnable( view: LoginViewController, userCode:String, userPwd:String) -> Bool {
+        
+        if userCode.count == 0{
+            view.tip(msg: "请输入账号或邮箱")
+            return false
+        }
+        
+        if userPwd.count == 0{
+            view.tip(msg: "请输入密码")
+            return false
+        }
+        
+        return true
+    }
+
     // MARK：- 登录
     func login(accountStr:String, pwdStr:String, finished:(_ success: Bool) -> Void){
         

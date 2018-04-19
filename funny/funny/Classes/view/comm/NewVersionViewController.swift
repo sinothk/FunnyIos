@@ -124,7 +124,7 @@ private class NewFeatureCell: UICollectionViewCell {
     @objc private func startUse(){
         NotificationCenter.default.post(
             name: NSNotification.Name(rawValue: WBSwitchRootViewControllerNotification),
-            object: nil)
+            object: "LoginViewController")
     }
     
     private lazy var iconView: UIImageView = UIImageView()

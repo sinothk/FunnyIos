@@ -29,15 +29,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                object:nil,queue:nil,using:
             {[weak self](notification) -> Void in
                 
-//                var vc:UIViewController? = nil
+                var vc:UIViewController? = nil
                 
-//                if notification.object == nil{
-//                    vc = LoginViewController()
-//                }else{
-//                    vc = MainViewController()
-//                }
+                let mark:String = notification.object as! String
+                
+                if mark == "LoginViewController"{
+                    vc = LoginViewController()
+                    
+                }else if mark == "MainViewController"{
+                    vc = MainViewController()
+                    
+                }else if mark == "NewVersionViewController"{
+                    vc = NewVersionViewController()
+                }
+                
+                
            
-                let vc = MineViewController()//notification.object != nil ? WelcomeViewController() : MainViewController()
+//                let vc = MineViewController()//notification.object != nil ? WelcomeViewController() : MainViewController()
                 
                 // 跳转到Main
                 self?.window?.rootViewController = vc

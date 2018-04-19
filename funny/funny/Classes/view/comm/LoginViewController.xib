@@ -15,6 +15,7 @@
                 <outlet property="avatarIv" destination="A1H-RP-0gN" id="V3q-O2-RGE"/>
                 <outlet property="findPwdBtn" destination="qRO-mT-OoY" id="f2u-6c-xhc"/>
                 <outlet property="loginBtn" destination="nZO-YH-pIV" id="7tU-eK-P3i"/>
+                <outlet property="newVersionBtn" destination="byj-27-qxi" id="HFp-0j-uAu"/>
                 <outlet property="registerBtn" destination="ST5-Gp-EwB" id="gId-pe-HvS"/>
                 <outlet property="userCodeTxt" destination="EEE-Io-Q2I" id="bmD-wP-sGF"/>
                 <outlet property="userPwdTxt" destination="XEj-YP-aNJ" id="TnZ-Kr-N0m"/>
@@ -31,6 +32,7 @@
                     <color key="barTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <items>
                         <navigationItem title="用户登录" id="x1B-pT-ctQ">
+                            <barButtonItem key="leftBarButtonItem" title="欢迎" id="byj-27-qxi"/>
                             <barButtonItem key="rightBarButtonItem" title="注册" id="ST5-Gp-EwB"/>
                         </navigationItem>
                     </items>

@@ -8,9 +8,8 @@
 
 import UIKit
 
-
 class LoginViewController: UIViewController {
-    
+    @IBOutlet weak var newVersionBtn: UIBarButtonItem!
     @IBOutlet weak var avatarIv: UIImageView!
     @IBOutlet weak var userCodeTxt: UITextField!
     @IBOutlet weak var userPwdTxt: UITextField!
@@ -19,11 +18,16 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var findPwdBtn: UIButton!
     
+    //MARK: -> 提示信息
+    func tip(msg:String) -> Void {
+        view.makeToast(msg, position: .center)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setupUI()
     }
+    
     // MARK: -> 初始化界面
     func setupUI() -> Void {
         avatarIv.image = UIImage(named:"NewVersion3")
@@ -39,8 +43,18 @@ class LoginViewController: UIViewController {
         loginBtn.backgroundColor = themeColor
         loginBtn.layer.cornerRadius = 6
         
+        newVersionBtn.action = #selector(titleBarLeftBtn)
         registerBtn.action = #selector(titleBarRightBtn)
+        
         loginBtn.addTarget(self, action: #selector(login), for: UIControlEvents.touchUpInside)
+        findPwdBtn.addTarget(self, action: #selector(findPwd), for: UIControlEvents.touchUpInside)
+    }
+    
+    //MARK: -> 进入版本介绍
+    @objc func titleBarLeftBtn(){
+        NotificationCenter.default.post(
+            name: NSNotification.Name(rawValue: WBSwitchRootViewControllerNotification),
+            object: "NewVersionViewController")
     }
     
     @objc func titleBarRightBtn(){
@@ -52,24 +66,25 @@ class LoginViewController: UIViewController {
         let userCode = userCodeTxt.text
         let userPwd = userPwdTxt.text
         
-        if userCode==nil || userCode?.count == 0{
-            self.view.makeToast("请输入账号或邮箱", position: .center)
-            return
-        }
+        // 账号合法性检测
+        let isInputEnable = LoginViewModel.shared.checkEnable(view: self, userCode: userCode!, userPwd: userPwd!)
+        let networkOk = NetworkUtil.shared.isEnable()
         
-        if userPwd==nil || userPwd?.count == 0{
-            self.view.makeToast("请输入密码", position: .center)
-            return
-        }
-        
-        // 判断网络
-            
-        UserViewModel.shared.login(accountStr: userCode!, pwdStr: userPwd!) { (isOk) in
-            if isOk {
-                print("isOk")
-            } else{
-                print("isNotOk")
+        if isInputEnable && networkOk {
+            // 执行登录
+            LoginViewModel.shared.login(accountStr: userCode!, pwdStr: userPwd!) { (isOk) in
+                if isOk {
+                    NotificationCenter.default.post(
+                        name: NSNotification.Name(rawValue: WBSwitchRootViewControllerNotification),
+                        object: "MainViewController")
+                } else{
+                    print("用户登录失败")
+                }
             }
         }
+    }
+
+    @objc func findPwd() -> Void {
+        print("findPwd")
     }
 }
