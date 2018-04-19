@@ -31,6 +31,17 @@ class MineViewController: UIViewController {
         sexImageView.image = UIImage(named:"ic_weibouser_female")
 
         editBtn.addTarget(self, action: #selector(startUse), for: .touchUpInside)
+        
+        let object = UserEntity()
+        object.age = 22
+        object.name = "LiangYT"
+        
+        let jsonString = object.toJSONString()!
+        
+        if let object = UserEntity.deserialize(from: jsonString) {
+            print(object.name ?? "TT")
+            print(object.age)
+        }
     }
     
     @objc private func startUse(){
