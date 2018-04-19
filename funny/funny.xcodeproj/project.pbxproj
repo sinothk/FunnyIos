@@ -31,6 +31,8 @@
 		2441DBB02084997800AFFCC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DBAF2084997800AFFCC1 /* AppDelegate.swift */; };
 		2441DBB72084997800AFFCC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2441DBB62084997800AFFCC1 /* Assets.xcassets */; };
 		24BD736A20887BFD00C7ECE4 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD736920887BFD00C7ECE4 /* UserViewModel.swift */; };
+		24BD738820888D8800C7ECE4 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD738720888D8800C7ECE4 /* Toast.swift */; };
+		24BD738A20888EA800C7ECE4 /* readMe.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24BD738920888EA800C7ECE4 /* readMe.strings */; };
 		24C1069B20882BF9007D7E93 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C1069A20882BF9007D7E93 /* MineViewController.xib */; };
 		24C106A82088373B007D7E93 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C106A72088373B007D7E93 /* UserEntity.swift */; };
 		24C106CE208838DF007D7E93 /* HandyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C106BA20883876007D7E93 /* HandyJSON.framework */; };
@@ -151,6 +153,8 @@
 		2441DBB62084997800AFFCC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2441DBBB2084997800AFFCC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24BD736920887BFD00C7ECE4 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		24BD738720888D8800C7ECE4 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		24BD738920888EA800C7ECE4 /* readMe.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = readMe.strings; sourceTree = "<group>"; };
 		24C1069A20882BF9007D7E93 /* MineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
 		24C106A72088373B007D7E93 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		24C106AE20883875007D7E93 /* HandyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HandyJSON.xcodeproj; path = "../../../../plugins/HandyJSON-master/HandyJSON.xcodeproj"; sourceTree = "<group>"; };
@@ -189,6 +193,7 @@
 		243CEEDE20874BAD007650FB /* pulgin */ = {
 			isa = PBXGroup;
 			children = (
+				24BD7372208887BA00C7ECE4 /* Toast */,
 				243CEEDF20874BAD007650FB /* Refresh */,
 			);
 			path = pulgin;
@@ -256,6 +261,15 @@
 				2441DBBB2084997800AFFCC1 /* Info.plist */,
 			);
 			path = funny;
+			sourceTree = "<group>";
+		};
+		24BD7372208887BA00C7ECE4 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				24BD738720888D8800C7ECE4 /* Toast.swift */,
+				24BD738920888EA800C7ECE4 /* readMe.strings */,
+			);
+			path = Toast;
 			sourceTree = "<group>";
 		};
 		24C106AF20883875007D7E93 /* Products */ = {
@@ -506,6 +520,7 @@
 				2441DBB72084997800AFFCC1 /* Assets.xcassets in Resources */,
 				2426CA27208668E600EDC2A0 /* TestViewController.xib in Resources */,
 				24C1069B20882BF9007D7E93 /* MineViewController.xib in Resources */,
+				24BD738A20888EA800C7ECE4 /* readMe.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +538,7 @@
 				243CEEEC20874BAD007650FB /* GIFAnimatedImageView.swift in Sources */,
 				24F2D87B2085A56E0025E6B5 /* UILabel.swift in Sources */,
 				243CEEEF20874BAD007650FB /* GifTextHeaderFooter.swift in Sources */,
+				24BD738820888D8800C7ECE4 /* Toast.swift in Sources */,
 				24F2D8712085A06B0025E6B5 /* NewVersionViewController.swift in Sources */,
 				243CEEF220874BAD007650FB /* RefreshView.swift in Sources */,
 				243CEF0120874D54007650FB /* StatusViewModel.swift in Sources */,
