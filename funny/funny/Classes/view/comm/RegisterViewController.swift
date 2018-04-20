@@ -20,6 +20,9 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        pwdTxt.isSecureTextEntry = true
+        pwd2Txt.isSecureTextEntry = true
+        
         okBtn.setTitleColor(UIColor.white, for: UIControlState.normal)
         okBtn.backgroundColor = themeColor
         okBtn.layer.cornerRadius = 6
