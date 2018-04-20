@@ -39,6 +39,8 @@
 		24C106CE208838DF007D7E93 /* HandyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C106BA20883876007D7E93 /* HandyJSON.framework */; };
 		24C106CF208838DF007D7E93 /* HandyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24C106BA20883876007D7E93 /* HandyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		24EE7C3F2084FFAA00CE23B0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EE7C3E2084FFAA00CE23B0 /* WelcomeViewController.swift */; };
+		24F0BF762089920700D744C6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F0BF742089920700D744C6 /* RegisterViewController.swift */; };
+		24F0BF772089920700D744C6 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24F0BF752089920700D744C6 /* RegisterViewController.xib */; };
 		24F2D8712085A06B0025E6B5 /* NewVersionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D8702085A06B0025E6B5 /* NewVersionViewController.swift */; };
 		24F2D8792085A5630025E6B5 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D8782085A5630025E6B5 /* UIButton.swift */; };
 		24F2D87B2085A56E0025E6B5 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D87A2085A56E0025E6B5 /* UILabel.swift */; };
@@ -161,6 +163,8 @@
 		24C106A72088373B007D7E93 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		24C106AE20883875007D7E93 /* HandyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HandyJSON.xcodeproj; path = "../../../../plugins/HandyJSON-master/HandyJSON.xcodeproj"; sourceTree = "<group>"; };
 		24EE7C3E2084FFAA00CE23B0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		24F0BF742089920700D744C6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		24F0BF752089920700D744C6 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		24F2D8702085A06B0025E6B5 /* NewVersionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVersionViewController.swift; sourceTree = "<group>"; };
 		24F2D8782085A5630025E6B5 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIButton.swift; path = ../../../../../../../../Gitee/Inspection/Inspection/Inspection/Classes/Tools/UIButton.swift; sourceTree = "<group>"; };
 		24F2D87A2085A56E0025E6B5 /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UILabel.swift; path = ../../../../../../../../Gitee/Inspection/Inspection/Inspection/Classes/Tools/Extension/UILabel.swift; sourceTree = "<group>"; };
@@ -362,6 +366,8 @@
 				24F2D8702085A06B0025E6B5 /* NewVersionViewController.swift */,
 				2429D5F2208848B10031872F /* LoginViewController.swift */,
 				2429D5F3208848B10031872F /* LoginViewController.xib */,
+				24F0BF742089920700D744C6 /* RegisterViewController.swift */,
+				24F0BF752089920700D744C6 /* RegisterViewController.xib */,
 			);
 			path = comm;
 			sourceTree = "<group>";
@@ -540,6 +546,7 @@
 				2426CA27208668E600EDC2A0 /* TestViewController.xib in Resources */,
 				24C1069B20882BF9007D7E93 /* MineViewController.xib in Resources */,
 				24BD738A20888EA800C7ECE4 /* readMe.strings in Resources */,
+				24F0BF772089920700D744C6 /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +584,7 @@
 				24F2D87D2085A5AD0025E6B5 /* Common.swift in Sources */,
 				2441DBB02084997800AFFCC1 /* AppDelegate.swift in Sources */,
 				243CEEFD20874C94007650FB /* StatusCell.swift in Sources */,
+				24F0BF762089920700D744C6 /* RegisterViewController.swift in Sources */,
 				243CEEFC20874C94007650FB /* StatusCellTopView.swift in Sources */,
 				2426CA26208668E600EDC2A0 /* TestViewController.swift in Sources */,
 				243CEEEE20874BAD007650FB /* GifHeaderFooter.swift in Sources */,

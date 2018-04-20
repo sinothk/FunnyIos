@@ -41,6 +41,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     
                 }else if mark == "NewVersionViewController"{
                     vc = NewVersionViewController()
+                    
+                }else if mark == "RegisterViewController"{
+                    vc = RegisterViewController()
+                    
                 }
                 
                 

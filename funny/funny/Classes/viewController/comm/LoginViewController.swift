@@ -57,8 +57,13 @@ class LoginViewController: UIViewController {
             object: "NewVersionViewController")
     }
     
+    //MARK: -> 注册
     @objc func titleBarRightBtn(){
-        print("注册")
+//        NotificationCenter.default.post(
+//            name: NSNotification.Name(rawValue: WBSwitchRootViewControllerNotification),
+//            object: "RegisterViewController")
+        let nib = RegisterViewController()//需要跳转的viewcontroller
+        self.present(nib, animated:false, completion: nil)
     }
     
     // MARK: -> 点击登录
