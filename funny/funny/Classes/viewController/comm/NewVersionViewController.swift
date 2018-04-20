@@ -125,9 +125,10 @@ private class NewFeatureCell: UICollectionViewCell {
         NotificationCenter.default.post(
             name: NSNotification.Name(rawValue: WBSwitchRootViewControllerNotification),
             object: "LoginViewController")
+        
     }
     
     private lazy var iconView: UIImageView = UIImageView()
-    private lazy var startBtn:UIButton = UIButton(title:"开始陌陌", color:UIColor.orange, imageName:"test_2")
+    private lazy var startBtn:UIButton = UIButton(title:"开始体验", color:UIColor.orange, imageName:"test_2")
 
 }

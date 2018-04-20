@@ -308,7 +308,7 @@
 		24EE7C342084FCC900CE23B0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				24EE7C352084FCFC00CE23B0 /* view */,
+				24EE7C352084FCFC00CE23B0 /* viewController */,
 				24EE7C372084FD1000CE23B0 /* viewModel */,
 				24EE7C362084FD0600CE23B0 /* model */,
 				24F2D8772085A4DD0025E6B5 /* tools */,
@@ -316,7 +316,7 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		24EE7C352084FCFC00CE23B0 /* view */ = {
+		24EE7C352084FCFC00CE23B0 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
 				2426CA1B2086602A00EDC2A0 /* user */,
@@ -326,7 +326,7 @@
 				24EE7C392084FD9A00CE23B0 /* comm */,
 				24EE7C382084FD8D00CE23B0 /* main */,
 			);
-			path = view;
+			path = viewController;
 			sourceTree = "<group>";
 		};
 		24EE7C362084FD0600CE23B0 /* model */ = {
