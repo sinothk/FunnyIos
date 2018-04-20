@@ -39,7 +39,7 @@ class RegisterViewController: UIViewController {
 //        NotificationCenter.default.post(
 //            name: NSNotification.Name(rawValue: WBSwitchRootViewControllerNotification),
 //            object: "NewVersionViewController")
-        let vc = DisclaimerViewController()
+        let vc = DisclaimerViewController()//()WKWebViewViewController
         self.present(vc,animated: false,completion: nil)
     }
     
