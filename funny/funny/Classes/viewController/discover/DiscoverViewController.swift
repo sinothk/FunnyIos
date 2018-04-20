@@ -10,7 +10,7 @@ import UIKit
 
 class DiscoverViewController: UITableViewController {
     
-     var count  = 30
+    var count  = 30
     
     override func viewDidLoad() {
         super.viewDidLoad()

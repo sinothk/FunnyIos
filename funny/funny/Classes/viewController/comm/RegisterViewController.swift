@@ -29,16 +29,21 @@ class RegisterViewController: UIViewController {
         likeBtn.addTarget(self, action: #selector(disclaimer), for: UIControlEvents.touchUpInside)
     }
     
+    //返回键
     @objc func titleBarLeftBtn(){
         self.dismiss(animated: false, completion:nil)
     }
     
+    // 免责声明
     @objc func disclaimer(){
-        NotificationCenter.default.post(
-            name: NSNotification.Name(rawValue: WBSwitchRootViewControllerNotification),
-            object: "NewVersionViewController")
+//        NotificationCenter.default.post(
+//            name: NSNotification.Name(rawValue: WBSwitchRootViewControllerNotification),
+//            object: "NewVersionViewController")
+        let vc = DisclaimerViewController()
+        self.present(vc,animated: false,completion: nil)
     }
     
+    // 注册事件
     @objc func doRegiter(){
         self.dismiss(animated: false, completion:nil)
     }

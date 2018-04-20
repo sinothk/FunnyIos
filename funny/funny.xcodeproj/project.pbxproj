@@ -30,6 +30,8 @@
 		243CEF0120874D54007650FB /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243CEF0020874D54007650FB /* StatusViewModel.swift */; };
 		2441DBB02084997800AFFCC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DBAF2084997800AFFCC1 /* AppDelegate.swift */; };
 		2441DBB72084997800AFFCC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2441DBB62084997800AFFCC1 /* Assets.xcassets */; };
+		249B0CEA2089C4EB001DD0DF /* DisclaimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249B0CE82089C4EB001DD0DF /* DisclaimerViewController.swift */; };
+		249B0CEB2089C4EB001DD0DF /* DisclaimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 249B0CE92089C4EB001DD0DF /* DisclaimerViewController.xib */; };
 		24BD736A20887BFD00C7ECE4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD736920887BFD00C7ECE4 /* LoginViewModel.swift */; };
 		24BD738820888D8800C7ECE4 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD738720888D8800C7ECE4 /* Toast.swift */; };
 		24BD738A20888EA800C7ECE4 /* readMe.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24BD738920888EA800C7ECE4 /* readMe.strings */; };
@@ -155,6 +157,8 @@
 		2441DBAF2084997800AFFCC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2441DBB62084997800AFFCC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2441DBBB2084997800AFFCC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		249B0CE82089C4EB001DD0DF /* DisclaimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerViewController.swift; sourceTree = "<group>"; };
+		249B0CE92089C4EB001DD0DF /* DisclaimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisclaimerViewController.xib; sourceTree = "<group>"; };
 		24BD736920887BFD00C7ECE4 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		24BD738720888D8800C7ECE4 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		24BD738920888EA800C7ECE4 /* readMe.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = readMe.strings; sourceTree = "<group>"; };
@@ -368,6 +372,8 @@
 				2429D5F3208848B10031872F /* LoginViewController.xib */,
 				24F0BF742089920700D744C6 /* RegisterViewController.swift */,
 				24F0BF752089920700D744C6 /* RegisterViewController.xib */,
+				249B0CE82089C4EB001DD0DF /* DisclaimerViewController.swift */,
+				249B0CE92089C4EB001DD0DF /* DisclaimerViewController.xib */,
 			);
 			path = comm;
 			sourceTree = "<group>";
@@ -547,6 +553,7 @@
 				24C1069B20882BF9007D7E93 /* MineViewController.xib in Resources */,
 				24BD738A20888EA800C7ECE4 /* readMe.strings in Resources */,
 				24F0BF772089920700D744C6 /* RegisterViewController.xib in Resources */,
+				249B0CEB2089C4EB001DD0DF /* DisclaimerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,6 +596,7 @@
 				2426CA26208668E600EDC2A0 /* TestViewController.swift in Sources */,
 				243CEEEE20874BAD007650FB /* GifHeaderFooter.swift in Sources */,
 				24F2D8902085E2010025E6B5 /* DiscoverViewController.swift in Sources */,
+				249B0CEA2089C4EB001DD0DF /* DisclaimerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
