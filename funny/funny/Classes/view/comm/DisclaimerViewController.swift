@@ -14,6 +14,7 @@ class DisclaimerViewController: UIViewController ,WKUIDelegate, WKNavigationDele
     @IBOutlet weak var myWeb: WKWebView!
     @IBOutlet weak var backBtn: UIBarButtonItem!
     
+    @IBOutlet weak var progressBar: UIActivityIndicatorView!
     //返回键
     @objc func titleBarLeftBtn(){
         self.dismiss(animated: false, completion:nil)
@@ -38,6 +39,7 @@ class DisclaimerViewController: UIViewController ,WKUIDelegate, WKNavigationDele
     @available(iOS 8.0, *)
     public func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!){
         print("111111")
+        progressBar.startAnimating()
     }
     
     // 页面加载失败时调用
@@ -50,6 +52,8 @@ class DisclaimerViewController: UIViewController ,WKUIDelegate, WKNavigationDele
     @available(iOS 8.0, *)
     public func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!){
         print("333")
+        progressBar.stopAnimating()
+        progressBar.isHidden = true
     }
     
     // 页面加载完成之后调用

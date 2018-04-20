@@ -90,6 +90,7 @@ class LoginViewController: UIViewController {
     }
 
     @objc func findPwd() -> Void {
-        print("findPwd")
+        let nib = FindPwdViewController()//需要跳转的viewcontroller
+        self.present(nib, animated:false, completion: nil)
     }
 }
