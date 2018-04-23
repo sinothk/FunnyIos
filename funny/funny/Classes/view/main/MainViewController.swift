@@ -22,7 +22,7 @@ extension MainViewController{
     private func addChildViewControllers() {
         tabBar.tintColor = UIColor.orange
         
-        addChildViewController(vc:HomeViewController(), title:"异趣", image: "ic_nav_nearby_normal")
+        addChildViewController(vc:HomeTableViewController(), title:"异趣", image: "ic_nav_nearby_normal")
         addChildViewController(vc:DiscoverViewController(), title:"发现", image:"ic_nav_follow_normal")
         addChildViewController(vc:MineViewController(), title:"我的", image:"ic_nav_profile_normal")
     }
