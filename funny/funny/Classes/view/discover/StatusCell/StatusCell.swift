@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 let StatusCellMargin:CGFloat = 12
 let StatusCellIconWidth:CGFloat = 36
@@ -56,31 +57,31 @@ extension StatusCell {
         contentView.addSubview(centerLabel)
         contentView.addSubview(bottomView)
         
-//        // 2.自动布局
-//        topView.snp.makeConstraints { (make) in
-//            make.top.equalTo(contentView.snp.top)
-//            make.left.equalTo(contentView.snp.left)
-//            make.right.equalTo(contentView.snp.right)
-//            // 高度设置
-//            make.height.equalTo(StatusCellMargin + StatusCellIconWidth)
-//        }
-//        
-//        // TODO:-
-//        centerLabel.snp.makeConstraints { (make) in
-//            make.top.equalTo(topView.snp.bottom).offset(StatusCellMargin)
-//            make.left.equalTo(contentView.snp.left).offset(StatusCellMargin)
-//
-//        }
-//        
-//        // 底部视图
-//        bottomView.snp.makeConstraints { (make) in
-//            make.top.equalTo(centerLabel.snp.bottom).offset(StatusCellMargin)
-//            make.left.equalTo(contentView.snp.left)
-//            make.right.equalTo(contentView.snp.right)
-//            make.height.equalTo(44)
-//            
-//            // 指定下边际，辅助自动计算行高！
-//            make.bottom.equalTo(contentView.snp.bottom)//.offset(-StatusCellMargin)
-//        }
+        // 2.自动布局
+        topView.snp.makeConstraints { (make) in
+            make.top.equalTo(contentView.snp.top)
+            make.left.equalTo(contentView.snp.left)
+            make.right.equalTo(contentView.snp.right)
+            // 高度设置
+            make.height.equalTo(StatusCellMargin + StatusCellIconWidth)
+        }
+        
+        // TODO:-
+        centerLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(topView.snp.bottom).offset(StatusCellMargin)
+            make.left.equalTo(contentView.snp.left).offset(StatusCellMargin)
+
+        }
+
+        // 底部视图
+        bottomView.snp.makeConstraints { (make) in
+            make.top.equalTo(centerLabel.snp.bottom).offset(StatusCellMargin)
+            make.left.equalTo(contentView.snp.left)
+            make.right.equalTo(contentView.snp.right)
+            make.height.equalTo(44)
+            
+            // 指定下边际，辅助自动计算行高！
+            make.bottom.equalTo(contentView.snp.bottom)//.offset(-StatusCellMargin)
+        }
     }
 }

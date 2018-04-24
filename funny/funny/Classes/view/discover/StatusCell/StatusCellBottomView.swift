@@ -33,52 +33,52 @@ extension StatusCellBottomView{
         addSubview(commentBtn)
         addSubview(likeBtn)
         
-//        //
-//        retweetBtn.snp.makeConstraints { (make) in
-//            make.top.equalTo(self.snp.top)
-//            make.left.equalTo(self.snp.left)
-//            make.bottom.equalTo(self.snp.bottom)
-//        }
-//
-//        commentBtn.snp.makeConstraints { (make) in
-//            make.top.equalTo(retweetBtn.snp.top)
-//            make.bottom.equalTo(retweetBtn.snp.bottom)
-//            make.left.equalTo(retweetBtn.snp.right)
-//
-//            make.width.equalTo(retweetBtn.snp.width)
-//        }
-//
-//        likeBtn.snp.makeConstraints { (make) in
-//            make.top.equalTo(commentBtn.snp.top)
-//            make.bottom.equalTo(commentBtn.snp.bottom)
-//            make.left.equalTo(commentBtn.snp.right)
-//            make.width.equalTo(commentBtn.snp.width)
-//            make.right.equalTo(self.snp.right)
-//        }
-//
-//        //
-//        let sep1 = sepView()
-//        let sep2 = sepView()
-//
-//        addSubview(sep1)
-//        addSubview(sep2)
-//
-//        let w = 1
-//        let scale = 0.4
-//
-//        sep1.snp.makeConstraints { (make) in
-//            make.left.left.equalTo(retweetBtn.snp.right)
-//            make.centerY.equalTo(retweetBtn.snp.centerY)
-//            make.width.equalTo(w)
-//            make.height.equalTo(retweetBtn.snp.height).multipliedBy(scale)
-//        }
-//
-//        sep2.snp.makeConstraints { (make) in
-//            make.left.left.equalTo(commentBtn.snp.right)
-//            make.centerY.equalTo(commentBtn.snp.centerY)
-//            make.width.equalTo(w)
-//            make.height.equalTo(commentBtn.snp.height).multipliedBy(scale)
-//        }
+        //
+        retweetBtn.snp.makeConstraints { (make) in
+            make.top.equalTo(self.snp.top)
+            make.left.equalTo(self.snp.left)
+            make.bottom.equalTo(self.snp.bottom)
+        }
+
+        commentBtn.snp.makeConstraints { (make) in
+            make.top.equalTo(retweetBtn.snp.top)
+            make.bottom.equalTo(retweetBtn.snp.bottom)
+            make.left.equalTo(retweetBtn.snp.right)
+
+            make.width.equalTo(retweetBtn.snp.width)
+        }
+
+        likeBtn.snp.makeConstraints { (make) in
+            make.top.equalTo(commentBtn.snp.top)
+            make.bottom.equalTo(commentBtn.snp.bottom)
+            make.left.equalTo(commentBtn.snp.right)
+            make.width.equalTo(commentBtn.snp.width)
+            make.right.equalTo(self.snp.right)
+        }
+
+        //
+        let sep1 = sepView()
+        let sep2 = sepView()
+
+        addSubview(sep1)
+        addSubview(sep2)
+
+        let w = 1
+        let scale = 0.4
+
+        sep1.snp.makeConstraints { (make) in
+            make.left.left.equalTo(retweetBtn.snp.right)
+            make.centerY.equalTo(retweetBtn.snp.centerY)
+            make.width.equalTo(w)
+            make.height.equalTo(retweetBtn.snp.height).multipliedBy(scale)
+        }
+
+        sep2.snp.makeConstraints { (make) in
+            make.left.left.equalTo(commentBtn.snp.right)
+            make.centerY.equalTo(commentBtn.snp.centerY)
+            make.width.equalTo(w)
+            make.height.equalTo(commentBtn.snp.height).multipliedBy(scale)
+        }
     }
     
     private func sepView() -> UIView{

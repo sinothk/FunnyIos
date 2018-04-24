@@ -8,6 +8,8 @@
 
 import UIKit
 
+let indentifier = "HomeTableViewCell"
+
 class HomeTableViewController: UITableViewController {
     
     var count  = 30
@@ -15,7 +17,7 @@ class HomeTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.register(HomeTableViewCell.self, forCellReuseIdentifier: "HomeTableViewCell")
+        tableView.register(HomeTableViewCell.self, forCellReuseIdentifier: indentifier)
         preareTableView()
         
         tableView.tableFooterView = UIView()
@@ -107,19 +109,9 @@ class HomeTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let indentifier = "HomeTableViewCell"
-        
         let cell = HomeTableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: indentifier)
 
-        if cell.textLabel==nil{
-            
-            print("titleLabel==nil")
-            
-        }else {
-            
-            cell.titleLabel?.text = "SINOTHK"
-            cell.titleLabel?.backgroundColor = UIColor.blue
-        }
+        cell.setData(position: indexPath.row)
         return cell
     }
     

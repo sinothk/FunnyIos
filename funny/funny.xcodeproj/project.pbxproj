@@ -43,9 +43,10 @@
 		24C152AF208D792D005966C3 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C152AD208D792D005966C3 /* HomeTableViewController.swift */; };
 		24C152B0208D792D005966C3 /* HomeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C152AE208D792D005966C3 /* HomeTableViewController.xib */; };
 		24C38815208DB20500378114 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C38813208DB20500378114 /* HomeTableViewCell.swift */; };
-		24C38818208DB8B300378114 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C38817208DB8B300378114 /* HomeViewModel.swift */; };
 		24CBFA332089E109000C29A3 /* FindPwdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CBFA312089E109000C29A3 /* FindPwdViewController.swift */; };
 		24CBFA342089E109000C29A3 /* FindPwdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24CBFA322089E109000C29A3 /* FindPwdViewController.xib */; };
+		24DE11B4208EC9EB00A4902F /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DE11B1208EC9BC00A4902F /* SnapKit.framework */; };
+		24DE11B5208EC9EB00A4902F /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24DE11B1208EC9BC00A4902F /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		24EE7C3F2084FFAA00CE23B0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EE7C3E2084FFAA00CE23B0 /* WelcomeViewController.swift */; };
 		24F0BF762089920700D744C6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F0BF742089920700D744C6 /* RegisterViewController.swift */; };
 		24F0BF772089920700D744C6 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24F0BF752089920700D744C6 /* RegisterViewController.xib */; };
@@ -120,6 +121,27 @@
 			remoteGlobalIDString = 21520C431D3341B200F53111;
 			remoteInfo = "HandyJSON iOS";
 		};
+		24DE11B0208EC9BC00A4902F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24DE11A4208EC9BC00A4902F /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
+			remoteInfo = SnapKit;
+		};
+		24DE11B2208EC9BC00A4902F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24DE11A4208EC9BC00A4902F /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
+			remoteInfo = "SnapKit Tests";
+		};
+		24DE11B6208EC9EB00A4902F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24DE11A4208EC9BC00A4902F /* SnapKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
+			remoteInfo = SnapKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -130,6 +152,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				24C106CF208838DF007D7E93 /* HandyJSON.framework in Embed Frameworks */,
+				24DE11B5208EC9EB00A4902F /* SnapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,9 +197,9 @@
 		24C152AD208D792D005966C3 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		24C152AE208D792D005966C3 /* HomeTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewController.xib; sourceTree = "<group>"; };
 		24C38813208DB20500378114 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
-		24C38817208DB8B300378114 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		24CBFA312089E109000C29A3 /* FindPwdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPwdViewController.swift; sourceTree = "<group>"; };
 		24CBFA322089E109000C29A3 /* FindPwdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindPwdViewController.xib; sourceTree = "<group>"; };
+		24DE11A4208EC9BC00A4902F /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = "../../../../plugins/SnapKit-develop/SnapKit.xcodeproj"; sourceTree = "<group>"; };
 		24EE7C3E2084FFAA00CE23B0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		24F0BF742089920700D744C6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		24F0BF752089920700D744C6 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
@@ -193,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24C106CE208838DF007D7E93 /* HandyJSON.framework in Frameworks */,
+				24DE11B4208EC9EB00A4902F /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +283,7 @@
 			children = (
 				2441DBAE2084997800AFFCC1 /* funny */,
 				2441DBAD2084997800AFFCC1 /* Products */,
+				24DE11A4208EC9BC00A4902F /* SnapKit.xcodeproj */,
 				24C106AE20883875007D7E93 /* HandyJSON.xcodeproj */,
 			);
 			sourceTree = "<group>";
@@ -327,9 +352,17 @@
 			isa = PBXGroup;
 			children = (
 				24C38813208DB20500378114 /* HomeTableViewCell.swift */,
-				24C38817208DB8B300378114 /* HomeViewModel.swift */,
 			);
 			path = homeCell;
+			sourceTree = "<group>";
+		};
+		24DE11A5208EC9BC00A4902F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24DE11B1208EC9BC00A4902F /* SnapKit.framework */,
+				24DE11B3208EC9BC00A4902F /* SnapKit Tests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		24EE7C342084FCC900CE23B0 /* Classes */ = {
@@ -460,6 +493,7 @@
 			);
 			dependencies = (
 				24C106D1208838DF007D7E93 /* PBXTargetDependency */,
+				24DE11B7208EC9EB00A4902F /* PBXTargetDependency */,
 			);
 			name = funny;
 			productName = funny;
@@ -497,6 +531,10 @@
 				{
 					ProductGroup = 24C106AF20883875007D7E93 /* Products */;
 					ProjectRef = 24C106AE20883875007D7E93 /* HandyJSON.xcodeproj */;
+				},
+				{
+					ProductGroup = 24DE11A5208EC9BC00A4902F /* Products */;
+					ProjectRef = 24DE11A4208EC9BC00A4902F /* SnapKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -563,6 +601,20 @@
 			remoteRef = 24C106C720883876007D7E93 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		24DE11B1208EC9BC00A4902F /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = 24DE11B0208EC9BC00A4902F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		24DE11B3208EC9BC00A4902F /* SnapKit Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SnapKit Tests.xctest";
+			remoteRef = 24DE11B2208EC9BC00A4902F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -608,7 +660,6 @@
 				24C38815208DB20500378114 /* HomeTableViewCell.swift in Sources */,
 				243CEEFF20874D1A007650FB /* Status.swift in Sources */,
 				24C106A82088373B007D7E93 /* UserEntity.swift in Sources */,
-				24C38818208DB8B300378114 /* HomeViewModel.swift in Sources */,
 				243CEEF420874BAD007650FB /* CoreTextHeaderFooter.swift in Sources */,
 				24EE7C3F2084FFAA00CE23B0 /* WelcomeViewController.swift in Sources */,
 				24F2D8792085A5630025E6B5 /* UIButton.swift in Sources */,
@@ -635,6 +686,11 @@
 			isa = PBXTargetDependency;
 			name = "HandyJSON iOS";
 			targetProxy = 24C106D0208838DF007D7E93 /* PBXContainerItemProxy */;
+		};
+		24DE11B7208EC9EB00A4902F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			targetProxy = 24DE11B6208EC9EB00A4902F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

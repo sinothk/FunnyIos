@@ -12,13 +12,13 @@ class StatusCellTopView: UIView {
 
     var viewModel: StatusViewModel?{
         didSet{
-//            // 设置工作
+            // 设置工作
 //            ImageHelper.shared.show(imageView: iconView, urlStr: (viewModel?.status?.avatar)!)
-//
-//            nameLabel.text = viewModel?.status?.name
-//            timeLabel.text = viewModel?.status?.time
-//            sourceLabel.text = viewModel?.status?.source
-            //            centerLabel.text = "Test"
+
+            nameLabel.text = viewModel?.status?.name
+            timeLabel.text = viewModel?.status?.time
+            sourceLabel.text = viewModel?.status?.source
+//                        centerLabel.text = "Test"
         }
     }
     
@@ -56,43 +56,43 @@ extension StatusCellTopView{
         addSubview(timeLabel)
         addSubview(sourceLabel)
         
-//        // 布局
-//        iconView.snp.makeConstraints { (make) in
-//            make.top.equalTo(self.snp.top).offset(StatusCellMargin)
-//            make.left.equalTo(self.snp.left).offset(StatusCellMargin)
-//            make.width.equalTo(StatusCellIconWidth)
-//            make.height.equalTo(StatusCellIconWidth)
-//        }
-//
-//        nameLabel.snp.makeConstraints { (make) in
-//            make.top.equalTo(iconView.snp.top)
-//            make.left.equalTo(iconView.snp.right).offset(StatusCellMargin)
-//            make.height.equalTo(20)
-//        }
-//
-//        levelIconView.snp.makeConstraints { (make) in
-//            make.top.equalTo(nameLabel.snp.top)
-//            make.left.equalTo(nameLabel.snp.right).offset(StatusCellMargin)
-//            make.width.equalTo(20)
-//            make.height.equalTo(20)
-//        }
-//
-//        vipIconView.snp.makeConstraints { (make) in
-//            make.right.equalTo(iconView.snp.right)
-//            make.bottom.equalTo(iconView.snp.bottom)
-//            make.width.equalTo(12)
-//            make.height.equalTo(12)
-//        }
-//
-//        timeLabel.snp.makeConstraints { (make) in
-//            make.left.equalTo(iconView.snp.right).offset(StatusCellMargin)
-//            make.bottom.equalTo(iconView.snp.bottom)
-//        }
-//
-//        sourceLabel.snp.makeConstraints { (make) in
-//            make.left.equalTo(timeLabel.snp.right).offset(StatusCellMargin)
-//            make.bottom.equalTo(iconView.snp.bottom)
-//        }
+        // 布局
+        iconView.snp.makeConstraints { (make) in
+            make.top.equalTo(self.snp.top).offset(StatusCellMargin)
+            make.left.equalTo(self.snp.left).offset(StatusCellMargin)
+            make.width.equalTo(StatusCellIconWidth)
+            make.height.equalTo(StatusCellIconWidth)
+        }
+
+        nameLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(iconView.snp.top)
+            make.left.equalTo(iconView.snp.right).offset(StatusCellMargin)
+            make.height.equalTo(20)
+        }
+
+        levelIconView.snp.makeConstraints { (make) in
+            make.top.equalTo(nameLabel.snp.top)
+            make.left.equalTo(nameLabel.snp.right).offset(StatusCellMargin)
+            make.width.equalTo(20)
+            make.height.equalTo(20)
+        }
+
+        vipIconView.snp.makeConstraints { (make) in
+            make.right.equalTo(iconView.snp.right)
+            make.bottom.equalTo(iconView.snp.bottom)
+            make.width.equalTo(12)
+            make.height.equalTo(12)
+        }
+
+        timeLabel.snp.makeConstraints { (make) in
+            make.left.equalTo(iconView.snp.right).offset(StatusCellMargin)
+            make.bottom.equalTo(iconView.snp.bottom)
+        }
+
+        sourceLabel.snp.makeConstraints { (make) in
+            make.left.equalTo(timeLabel.snp.right).offset(StatusCellMargin)
+            make.bottom.equalTo(iconView.snp.bottom)
+        }
     }
     
 }

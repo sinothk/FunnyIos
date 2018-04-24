@@ -41,4 +41,8 @@ class HomeTableViewCell: UITableViewCell {
 //        self.addSubview(self.picImgView!)
         
     }
+    
+    func setData(position:Int) -> Void {
+        self.titleLabel?.text = "这是_\(position)"
+    }
 }
