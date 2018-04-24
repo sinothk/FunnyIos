@@ -31,7 +31,7 @@
                     <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <items>
                         <navigationItem title="注册" id="bH5-h0-w06">
-                            <barButtonItem key="leftBarButtonItem" title="返回" id="fuf-BV-zEO"/>
+                            <barButtonItem key="leftBarButtonItem" title="返回" image="icon_back_grey" id="fuf-BV-zEO"/>
                         </navigationItem>
                     </items>
                 </navigationBar>
@@ -144,4 +144,7 @@
             <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="icon_back_grey" width="25" height="25"/>
+    </resources>
 </document>

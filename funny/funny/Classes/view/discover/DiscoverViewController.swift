@@ -10,11 +10,22 @@ import UIKit
 
 class DiscoverViewController: UITableViewController {
     
-    var count  = 30
+    var count = 30
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named:"icon_add_grey"), style: .plain, target: self,action:#selector(addContent))
+        
+        initTableCellUI()
+    }
+
+    @objc func addContent() -> Void {
+        print("addContent")
+    }
+    
+    //MARK: 处理TableCell
+    func initTableCellUI() -> Void {
         tableView.register(StatusCell.self, forCellReuseIdentifier: "reuseIdentifier")
         preareTableView()
         
@@ -32,7 +43,7 @@ class DiscoverViewController: UITableViewController {
             color: UIColor.black,
             completion: { [weak self] in
                 
-//                let data = StatusViewModel.shared.load(page: 0,pageSize: 20)
+                //                let data = StatusViewModel.shared.load(page: 0,pageSize: 20)
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                     self?.tableView.sy_header?.endRefreshing()
@@ -64,7 +75,7 @@ class DiscoverViewController: UITableViewController {
         
         tableView.sy_header?.beginRefreshing()
     }
-
+    
     //MARK: - 准备表格
     private func preareTableView(){
         tableView.estimatedRowHeight = 100
