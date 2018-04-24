@@ -13,8 +13,8 @@ class StatusCellTopView: UIView {
     var viewModel: StatusViewModel?{
         didSet{
             // 设置工作
-//            ImageHelper.shared.show(imageView: iconView, urlStr: (viewModel?.status?.avatar)!)
-
+            iconView.load.request(with: (viewModel?.status?.avatar)!)
+            
             nameLabel.text = viewModel?.status?.name
             timeLabel.text = viewModel?.status?.time
             sourceLabel.text = viewModel?.status?.source

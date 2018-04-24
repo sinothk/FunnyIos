@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24148D8C208F196E0015E374 /* HttpHelperDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24148D87208F196E0015E374 /* HttpHelperDemo.swift */; };
+		24148D8D208F196E0015E374 /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24148D88208F196E0015E374 /* JsonHelper.swift */; };
+		24148D8E208F196E0015E374 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24148D89208F196E0015E374 /* Person.swift */; };
+		24148D8F208F196E0015E374 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24148D8A208F196E0015E374 /* ImageHelper.swift */; };
+		24148D90208F196E0015E374 /* HttpHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24148D8B208F196E0015E374 /* HttpHelper.swift */; };
+		24148D9A208F1B500015E374 /* ImageLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24148D97208F1B3D0015E374 /* ImageLoader.framework */; };
+		24148D9B208F1B500015E374 /* ImageLoader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24148D97208F1B3D0015E374 /* ImageLoader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2426CA222086633100EDC2A0 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2426CA202086633100EDC2A0 /* MineViewController.swift */; };
-		2426CA26208668E600EDC2A0 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2426CA24208668E600EDC2A0 /* TestViewController.swift */; };
-		2426CA27208668E600EDC2A0 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2426CA25208668E600EDC2A0 /* TestViewController.xib */; };
 		2429D5F4208848B10031872F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2429D5F2208848B10031872F /* LoginViewController.swift */; };
 		2429D5F5208848B10031872F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2429D5F3208848B10031872F /* LoginViewController.xib */; };
 		243CEEDD20874772007650FB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243CEEDC20874772007650FB /* MainViewController.swift */; };
@@ -58,6 +63,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		24148D96208F1B3D0015E374 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24148D91208F1B3D0015E374 /* ImageLoader.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65B2CF1119EF9F6600DA3605;
+			remoteInfo = ImageLoader;
+		};
+		24148D98208F1B3D0015E374 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24148D91208F1B3D0015E374 /* ImageLoader.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65B2CF1C19EF9F6600DA3605;
+			remoteInfo = ImageLoaderTests;
+		};
+		24148D9C208F1B500015E374 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24148D91208F1B3D0015E374 /* ImageLoader.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 65B2CF1019EF9F6600DA3605;
+			remoteInfo = ImageLoader;
+		};
 		24C106B920883876007D7E93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 24C106AE20883875007D7E93 /* HandyJSON.xcodeproj */;
@@ -151,6 +177,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				24148D9B208F1B500015E374 /* ImageLoader.framework in Embed Frameworks */,
 				24C106CF208838DF007D7E93 /* HandyJSON.framework in Embed Frameworks */,
 				24DE11B5208EC9EB00A4902F /* SnapKit.framework in Embed Frameworks */,
 			);
@@ -160,9 +187,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		24148D87208F196E0015E374 /* HttpHelperDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpHelperDemo.swift; sourceTree = "<group>"; };
+		24148D88208F196E0015E374 /* JsonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
+		24148D89208F196E0015E374 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		24148D8A208F196E0015E374 /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		24148D8B208F196E0015E374 /* HttpHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpHelper.swift; sourceTree = "<group>"; };
+		24148D91208F1B3D0015E374 /* ImageLoader.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ImageLoader.xcodeproj; path = "../../../../plugins/ImageLoaderSwift-master/ImageLoader.xcodeproj"; sourceTree = "<group>"; };
 		2426CA202086633100EDC2A0 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
-		2426CA24208668E600EDC2A0 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
-		2426CA25208668E600EDC2A0 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		2429D5F2208848B10031872F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2429D5F3208848B10031872F /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		243CEEDC20874772007650FB /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -215,6 +246,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24148D9A208F1B500015E374 /* ImageLoader.framework in Frameworks */,
 				24C106CE208838DF007D7E93 /* HandyJSON.framework in Frameworks */,
 				24DE11B4208EC9EB00A4902F /* SnapKit.framework in Frameworks */,
 			);
@@ -223,13 +255,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24148D86208F19310015E374 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				24148D8B208F196E0015E374 /* HttpHelper.swift */,
+				24148D87208F196E0015E374 /* HttpHelperDemo.swift */,
+				24148D8A208F196E0015E374 /* ImageHelper.swift */,
+				24148D88208F196E0015E374 /* JsonHelper.swift */,
+				24148D89208F196E0015E374 /* Person.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		24148D92208F1B3D0015E374 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24148D97208F1B3D0015E374 /* ImageLoader.framework */,
+				24148D99208F1B3D0015E374 /* ImageLoaderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2426CA1B2086602A00EDC2A0 /* user */ = {
 			isa = PBXGroup;
 			children = (
 				2426CA202086633100EDC2A0 /* MineViewController.swift */,
 				24C1069A20882BF9007D7E93 /* MineViewController.xib */,
-				2426CA24208668E600EDC2A0 /* TestViewController.swift */,
-				2426CA25208668E600EDC2A0 /* TestViewController.xib */,
 			);
 			path = user;
 			sourceTree = "<group>";
@@ -237,6 +288,7 @@
 		243CEEDE20874BAD007650FB /* pulgin */ = {
 			isa = PBXGroup;
 			children = (
+				24148D86208F19310015E374 /* network */,
 				24BD7372208887BA00C7ECE4 /* Toast */,
 				243CEEDF20874BAD007650FB /* Refresh */,
 			);
@@ -283,6 +335,7 @@
 			children = (
 				2441DBAE2084997800AFFCC1 /* funny */,
 				2441DBAD2084997800AFFCC1 /* Products */,
+				24148D91208F1B3D0015E374 /* ImageLoader.xcodeproj */,
 				24DE11A4208EC9BC00A4902F /* SnapKit.xcodeproj */,
 				24C106AE20883875007D7E93 /* HandyJSON.xcodeproj */,
 			);
@@ -494,6 +547,7 @@
 			dependencies = (
 				24C106D1208838DF007D7E93 /* PBXTargetDependency */,
 				24DE11B7208EC9EB00A4902F /* PBXTargetDependency */,
+				24148D9D208F1B500015E374 /* PBXTargetDependency */,
 			);
 			name = funny;
 			productName = funny;
@@ -533,6 +587,10 @@
 					ProjectRef = 24C106AE20883875007D7E93 /* HandyJSON.xcodeproj */;
 				},
 				{
+					ProductGroup = 24148D92208F1B3D0015E374 /* Products */;
+					ProjectRef = 24148D91208F1B3D0015E374 /* ImageLoader.xcodeproj */;
+				},
+				{
 					ProductGroup = 24DE11A5208EC9BC00A4902F /* Products */;
 					ProjectRef = 24DE11A4208EC9BC00A4902F /* SnapKit.xcodeproj */;
 				},
@@ -545,6 +603,20 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		24148D97208F1B3D0015E374 /* ImageLoader.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ImageLoader.framework;
+			remoteRef = 24148D96208F1B3D0015E374 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		24148D99208F1B3D0015E374 /* ImageLoaderTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ImageLoaderTests.xctest;
+			remoteRef = 24148D98208F1B3D0015E374 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		24C106BA20883876007D7E93 /* HandyJSON.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -624,7 +696,6 @@
 			files = (
 				2429D5F5208848B10031872F /* LoginViewController.xib in Resources */,
 				2441DBB72084997800AFFCC1 /* Assets.xcassets in Resources */,
-				2426CA27208668E600EDC2A0 /* TestViewController.xib in Resources */,
 				24C1069B20882BF9007D7E93 /* MineViewController.xib in Resources */,
 				24BD738A20888EA800C7ECE4 /* readMe.strings in Resources */,
 				24CBFA342089E109000C29A3 /* FindPwdViewController.xib in Resources */,
@@ -644,12 +715,15 @@
 				2429D5F4208848B10031872F /* LoginViewController.swift in Sources */,
 				24BD738D208899E900C7ECE4 /* NetworkUtil.swift in Sources */,
 				24BD736A20887BFD00C7ECE4 /* LoginViewModel.swift in Sources */,
+				24148D8D208F196E0015E374 /* JsonHelper.swift in Sources */,
 				243CEEDD20874772007650FB /* MainViewController.swift in Sources */,
 				2426CA222086633100EDC2A0 /* MineViewController.swift in Sources */,
 				243CEEEC20874BAD007650FB /* GIFAnimatedImageView.swift in Sources */,
 				24F2D87B2085A56E0025E6B5 /* UILabel.swift in Sources */,
 				24CBFA332089E109000C29A3 /* FindPwdViewController.swift in Sources */,
+				24148D90208F196E0015E374 /* HttpHelper.swift in Sources */,
 				243CEEEF20874BAD007650FB /* GifTextHeaderFooter.swift in Sources */,
+				24148D8E208F196E0015E374 /* Person.swift in Sources */,
 				24BD738820888D8800C7ECE4 /* Toast.swift in Sources */,
 				24F2D8712085A06B0025E6B5 /* NewVersionViewController.swift in Sources */,
 				243CEEF220874BAD007650FB /* RefreshView.swift in Sources */,
@@ -666,22 +740,28 @@
 				243CEEFB20874C94007650FB /* StatusCellBottomView.swift in Sources */,
 				243CEEF320874BAD007650FB /* UIScrollView+SYRefresh.swift in Sources */,
 				243CEEED20874BAD007650FB /* GifImagesHeaderFooter.swift in Sources */,
+				24148D8C208F196E0015E374 /* HttpHelperDemo.swift in Sources */,
 				243CEEEB20874BAD007650FB /* MyTableViewController.swift in Sources */,
 				24F2D87D2085A5AD0025E6B5 /* Common.swift in Sources */,
 				2441DBB02084997800AFFCC1 /* AppDelegate.swift in Sources */,
 				243CEEFD20874C94007650FB /* StatusCell.swift in Sources */,
 				24F0BF762089920700D744C6 /* RegisterViewController.swift in Sources */,
 				243CEEFC20874C94007650FB /* StatusCellTopView.swift in Sources */,
-				2426CA26208668E600EDC2A0 /* TestViewController.swift in Sources */,
 				243CEEEE20874BAD007650FB /* GifHeaderFooter.swift in Sources */,
 				24F2D8902085E2010025E6B5 /* DiscoverViewController.swift in Sources */,
 				249B0CEA2089C4EB001DD0DF /* DisclaimerViewController.swift in Sources */,
+				24148D8F208F196E0015E374 /* ImageHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		24148D9D208F1B500015E374 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ImageLoader;
+			targetProxy = 24148D9C208F1B500015E374 /* PBXContainerItemProxy */;
+		};
 		24C106D1208838DF007D7E93 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "HandyJSON iOS";

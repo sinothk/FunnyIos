@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ImageLoader
 
 class MineViewController: UIViewController {
     @IBOutlet weak var avatar: UIImageView!
@@ -18,7 +19,11 @@ class MineViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        avatar.image = UIImage(named:"NewVersion3")
+//        avatar.image = UIImage(named:"NewVersion3")
+//        
+        
+        avatar.load.request(with: "http://sinothk.com/images/about.png")
+        
         avatar.layer.cornerRadius = 30
         avatar.layer.masksToBounds = true
 
@@ -31,6 +36,7 @@ class MineViewController: UIViewController {
         sexImageView.image = UIImage(named:"ic_weibouser_female")
 
         editBtn.addTarget(self, action: #selector(startUse), for: .touchUpInside)
+        
 //
 //        let object = UserEntity()
 //        object.age = 22

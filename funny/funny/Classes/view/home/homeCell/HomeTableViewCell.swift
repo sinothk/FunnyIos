@@ -10,29 +10,45 @@ import UIKit
 
 class HomeTableViewCell: UITableViewCell {
 
-    var titleLabel:UILabel?
-    var picImgView:UIImageView?
+//    var titleLabel:UILabel?
+//    var picImgView:UIImageView?
+    // 用户头像
+    private lazy var iconView: UIImageView = UIImageView(image: UIImage(named:"avatar_test"))
+    private lazy var nameLabel:UILabel = UILabel(title: "用户名称",fontSize: 14,color: UIColor.darkGray)
     
     required init?(coder aDecoder:NSCoder) {
         super.init(coder: aDecoder)
     }
     
     override init(style:UITableViewCellStyle, reuseIdentifier:String?) {
-        
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
         self.setUpUI();
+        
+        // 底部
+        selectionStyle = .none
     }
     
     func setUpUI() {
+        self.addSubview(self.nameLabel)
         
-        self.titleLabel = UILabel.init()
-        self.titleLabel?.backgroundColor = UIColor.clear;
-        self.titleLabel?.frame = CGRect(x:0, y:0, width:100, height:30)
-        self.titleLabel?.text = "Title"
-        self.titleLabel?.textColor = UIColor.black
-        self.titleLabel?.font = UIFont.systemFont(ofSize: 15)
-        self.titleLabel?.textAlignment = NSTextAlignment.center
-        self.addSubview(self.titleLabel!)
+        // 布局
+        nameLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(self.snp.top).offset(StatusCellMargin)
+            make.left.equalTo(self.snp.left).offset(StatusCellMargin)
+            make.width.equalTo(200)
+            make.height.equalTo(StatusCellIconWidth)
+        }
+        
+//        self.titleLabel = UILabel.init()
+//        self.titleLabel?.backgroundColor = UIColor.clear;
+//        self.titleLabel?.frame = CGRect(x:0, y:0, width:100, height:30)
+//        self.titleLabel?.text = "Title"
+//        self.titleLabel?.textColor = UIColor.black
+//        self.titleLabel?.font = UIFont.systemFont(ofSize: 15)
+//        self.titleLabel?.textAlignment = NSTextAlignment.center
+//
+//        self.addSubview(self.titleLabel!)
         
 //        self.picImgView = UIImageView()
 //        self.picImgView?.frame = CGRect(x:110, y:50, width:50, height:50)
@@ -43,6 +59,6 @@ class HomeTableViewCell: UITableViewCell {
     }
     
     func setData(position:Int) -> Void {
-        self.titleLabel?.text = "这是_\(position)"
+        self.nameLabel.text = "这是_\(position)"
     }
 }
