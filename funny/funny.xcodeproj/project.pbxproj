@@ -14,6 +14,7 @@
 		24148D90208F196E0015E374 /* HttpHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24148D8B208F196E0015E374 /* HttpHelper.swift */; };
 		24148D9A208F1B500015E374 /* ImageLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24148D97208F1B3D0015E374 /* ImageLoader.framework */; };
 		24148D9B208F1B500015E374 /* ImageLoader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24148D97208F1B3D0015E374 /* ImageLoader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		24148DA1208F2D570015E374 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24148DA0208F2D570015E374 /* UIImageView.swift */; };
 		2426CA222086633100EDC2A0 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2426CA202086633100EDC2A0 /* MineViewController.swift */; };
 		2429D5F4208848B10031872F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2429D5F2208848B10031872F /* LoginViewController.swift */; };
 		2429D5F5208848B10031872F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2429D5F3208848B10031872F /* LoginViewController.xib */; };
@@ -60,6 +61,10 @@
 		24F2D87B2085A56E0025E6B5 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D87A2085A56E0025E6B5 /* UILabel.swift */; };
 		24F2D87D2085A5AD0025E6B5 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D87C2085A5AD0025E6B5 /* Common.swift */; };
 		24F2D8902085E2010025E6B5 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D88E2085E2010025E6B5 /* DiscoverViewController.swift */; };
+		24F8A97D209013B200B5F600 /* SpoorAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F8A97B209013B200B5F600 /* SpoorAddViewController.swift */; };
+		24F8A97E209013B200B5F600 /* SpoorAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24F8A97C209013B200B5F600 /* SpoorAddViewController.xib */; };
+		24F8A981209013E800B5F600 /* SpoorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F8A97F209013E800B5F600 /* SpoorTableViewController.swift */; };
+		24F8A982209013E800B5F600 /* SpoorTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24F8A980209013E800B5F600 /* SpoorTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -193,6 +198,7 @@
 		24148D8A208F196E0015E374 /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		24148D8B208F196E0015E374 /* HttpHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpHelper.swift; sourceTree = "<group>"; };
 		24148D91208F1B3D0015E374 /* ImageLoader.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ImageLoader.xcodeproj; path = "../../../../plugins/ImageLoaderSwift-master/ImageLoader.xcodeproj"; sourceTree = "<group>"; };
+		24148DA0208F2D570015E374 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		2426CA202086633100EDC2A0 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		2429D5F2208848B10031872F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2429D5F3208848B10031872F /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -239,6 +245,10 @@
 		24F2D87A2085A56E0025E6B5 /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UILabel.swift; path = ../../../../../../../../Gitee/Inspection/Inspection/Inspection/Classes/Tools/Extension/UILabel.swift; sourceTree = "<group>"; };
 		24F2D87C2085A5AD0025E6B5 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = ../../../../../../../Gitee/Inspection/Inspection/Inspection/Classes/Tools/Common.swift; sourceTree = "<group>"; };
 		24F2D88E2085E2010025E6B5 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		24F8A97B209013B200B5F600 /* SpoorAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpoorAddViewController.swift; sourceTree = "<group>"; };
+		24F8A97C209013B200B5F600 /* SpoorAddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpoorAddViewController.xib; sourceTree = "<group>"; };
+		24F8A97F209013E800B5F600 /* SpoorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpoorTableViewController.swift; sourceTree = "<group>"; };
+		24F8A980209013E800B5F600 /* SpoorTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpoorTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -436,6 +446,7 @@
 				24F2D8832085CBB90025E6B5 /* base */,
 				24F2D8962085E50A0025E6B5 /* home */,
 				24EE7C3B2084FDB300CE23B0 /* discover */,
+				24F8A9712090135900B5F600 /* spoor */,
 				24EE7C392084FD9A00CE23B0 /* comm */,
 				24EE7C382084FD8D00CE23B0 /* main */,
 			);
@@ -499,6 +510,7 @@
 			children = (
 				24F2D87A2085A56E0025E6B5 /* UILabel.swift */,
 				24F2D8782085A5630025E6B5 /* UIButton.swift */,
+				24148DA0208F2D570015E374 /* UIImageView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -528,6 +540,17 @@
 				24C152AE208D792D005966C3 /* HomeTableViewController.xib */,
 			);
 			path = home;
+			sourceTree = "<group>";
+		};
+		24F8A9712090135900B5F600 /* spoor */ = {
+			isa = PBXGroup;
+			children = (
+				24F8A97B209013B200B5F600 /* SpoorAddViewController.swift */,
+				24F8A97C209013B200B5F600 /* SpoorAddViewController.xib */,
+				24F8A97F209013E800B5F600 /* SpoorTableViewController.swift */,
+				24F8A980209013E800B5F600 /* SpoorTableViewController.xib */,
+			);
+			path = spoor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -695,6 +718,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2429D5F5208848B10031872F /* LoginViewController.xib in Resources */,
+				24F8A982209013E800B5F600 /* SpoorTableViewController.xib in Resources */,
+				24F8A97E209013B200B5F600 /* SpoorAddViewController.xib in Resources */,
 				2441DBB72084997800AFFCC1 /* Assets.xcassets in Resources */,
 				24C1069B20882BF9007D7E93 /* MineViewController.xib in Resources */,
 				24BD738A20888EA800C7ECE4 /* readMe.strings in Resources */,
@@ -714,9 +739,11 @@
 			files = (
 				2429D5F4208848B10031872F /* LoginViewController.swift in Sources */,
 				24BD738D208899E900C7ECE4 /* NetworkUtil.swift in Sources */,
+				24F8A97D209013B200B5F600 /* SpoorAddViewController.swift in Sources */,
 				24BD736A20887BFD00C7ECE4 /* LoginViewModel.swift in Sources */,
 				24148D8D208F196E0015E374 /* JsonHelper.swift in Sources */,
 				243CEEDD20874772007650FB /* MainViewController.swift in Sources */,
+				24148DA1208F2D570015E374 /* UIImageView.swift in Sources */,
 				2426CA222086633100EDC2A0 /* MineViewController.swift in Sources */,
 				243CEEEC20874BAD007650FB /* GIFAnimatedImageView.swift in Sources */,
 				24F2D87B2085A56E0025E6B5 /* UILabel.swift in Sources */,
@@ -751,6 +778,7 @@
 				24F2D8902085E2010025E6B5 /* DiscoverViewController.swift in Sources */,
 				249B0CEA2089C4EB001DD0DF /* DisclaimerViewController.swift in Sources */,
 				24148D8F208F196E0015E374 /* ImageHelper.swift in Sources */,
+				24F8A981209013E800B5F600 /* SpoorTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

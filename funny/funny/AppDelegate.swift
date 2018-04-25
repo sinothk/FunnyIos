@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window = UIWindow(frame:UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
-        window?.rootViewController = LoginViewController() //NewVersionViewController() LoginViewController  MainViewController
+        window?.rootViewController = MainViewController() //NewVersionViewController() LoginViewController
         window?.makeKeyAndVisible()
         
         // 监听通知

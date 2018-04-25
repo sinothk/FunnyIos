@@ -13,7 +13,7 @@ class StatusCellTopView: UIView {
     var viewModel: StatusViewModel?{
         didSet{
             // 设置工作
-            iconView.load.request(with: (viewModel?.status?.avatar)!)
+            iconView.show(url:(viewModel?.status?.avatar)!)
             
             nameLabel.text = viewModel?.status?.name
             timeLabel.text = viewModel?.status?.time
@@ -21,7 +21,7 @@ class StatusCellTopView: UIView {
 //                        centerLabel.text = "Test"
         }
     }
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()

@@ -15,14 +15,12 @@ class MineViewController: UIViewController {
     @IBOutlet weak var sexImageView: UIImageView!
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var editBtn: UIButton!
+    @IBOutlet weak var logout: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        avatar.image = UIImage(named:"NewVersion3")
-//        
-        
-        avatar.load.request(with: "http://sinothk.com/images/about.png")
+
+        avatar.show(url: "http://sinothk.com/images/about.png", defaultImg: UIImage(named: "ic_chat_def_pic")!)
         
         avatar.layer.cornerRadius = 30
         avatar.layer.masksToBounds = true
@@ -36,6 +34,11 @@ class MineViewController: UIViewController {
         sexImageView.image = UIImage(named:"ic_weibouser_female")
 
         editBtn.addTarget(self, action: #selector(startUse), for: .touchUpInside)
+
+        logout.setTitleColor(UIColor.white, for: UIControlState.normal)
+        logout.backgroundColor = themeColor
+        logout.layer.cornerRadius = 6
+        logout.addTarget(self, action: #selector(exit), for: .touchUpInside)
         
 //
 //        let object = UserEntity()
@@ -52,5 +55,11 @@ class MineViewController: UIViewController {
     
     @objc private func startUse(){
         print("www.sinothk.com")
+    }
+    
+    @objc private func exit(){
+        NotificationCenter.default.post(
+            name: NSNotification.Name(rawValue: WBSwitchRootViewControllerNotification),
+            object: "LoginViewController")
     }
 }

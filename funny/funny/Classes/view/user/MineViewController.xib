@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,6 +15,7 @@
                 <outlet property="ageLabel" destination="O3N-hG-1CH" id="9Uo-3s-Riw"/>
                 <outlet property="avatar" destination="PAP-s5-WOu" id="CPx-22-toX"/>
                 <outlet property="editBtn" destination="3He-CZ-0dS" id="lDS-oV-PlR"/>
+                <outlet property="logout" destination="hrM-F7-uRr" id="wKP-xk-FZM"/>
                 <outlet property="nicknameLabel" destination="HDO-nY-Zlx" id="Usv-i9-bJc"/>
                 <outlet property="sexImageView" destination="66T-B3-NF6" id="O27-80-359"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -66,14 +67,25 @@
                         <color key="titleColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrM-F7-uRr" userLabel="loginOut">
+                    <rect key="frame" x="30" y="533" width="315" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="B5B-ev-Dkf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="退  出"/>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="66T-B3-NF6" firstAttribute="leading" secondItem="PAP-s5-WOu" secondAttribute="trailing" constant="16" id="1BW-ik-VD4"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3He-CZ-0dS" secondAttribute="trailing" constant="16" id="8G6-3C-xwi"/>
+                <constraint firstItem="hrM-F7-uRr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="FBd-l8-4hf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hrM-F7-uRr" secondAttribute="bottom" constant="94" id="GJb-dD-hmA"/>
                 <constraint firstItem="HDO-nY-Zlx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="J9Y-4f-Jbs"/>
                 <constraint firstAttribute="trailing" secondItem="3He-CZ-0dS" secondAttribute="trailing" constant="16" id="OtJ-SN-6mR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HDO-nY-Zlx" secondAttribute="trailing" constant="50" id="TRt-sI-bJd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hrM-F7-uRr" secondAttribute="trailing" constant="30" id="TtN-TZ-xp6"/>
                 <constraint firstItem="PAP-s5-WOu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="bMQ-cH-5Tk"/>
                 <constraint firstItem="HDO-nY-Zlx" firstAttribute="leading" secondItem="PAP-s5-WOu" secondAttribute="trailing" constant="16" id="epK-gf-miZ"/>
                 <constraint firstItem="66T-B3-NF6" firstAttribute="top" secondItem="HDO-nY-Zlx" secondAttribute="bottom" constant="16" id="h1A-sg-n8f"/>
