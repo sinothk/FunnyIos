@@ -10,26 +10,38 @@ import UIKit
 
 class SpoorAddViewController: UIViewController {
 
+    @IBOutlet weak var titleLeftBtn: UIBarButtonItem!
+    @IBOutlet weak var titleRightBtn: UIBarButtonItem!
+    
+    @IBOutlet weak var inputTxt: UITextView!
+    
+    func initTitle() -> Void {
+        titleLeftBtn.action = #selector(closeVC)
+        titleRightBtn.action = #selector(addSpoor)
+    }
+    
+    @objc func closeVC() -> Void {
+        self.dismiss(animated: false, completion:nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        initTitle()
+        
+        inputTxt.layer.borderWidth = 1  //边框粗细
+        inputTxt.layer.borderColor = UIColor.lightGray.cgColor //边框颜色
+        inputTxt.layer.cornerRadius = 6
     }
 
+    @objc func addSpoor() -> Void {
+        let intpuValue:String = inputTxt.text
+        print(intpuValue)
+        closeVC()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

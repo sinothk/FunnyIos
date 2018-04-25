@@ -13,20 +13,25 @@ class SpoorTableViewController: UITableViewController {
     var count  = 30
     
     @objc func addSpoor() -> Void {
-        print("addContent")
+        let vc = SpoorAddViewController()
+        self.present(vc,animated: false,completion: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named:"icon_add_grey"), style: .plain, target: self,action:#selector(addSpoor))
+//        initTitle()
         
+        initTable()
+    }
+    
+    func initTable() -> Void {
+        let cellNib = UINib(nibName: "SpoorTableViewCell", bundle: nil)
+        tableView.register(cellNib, forCellReuseIdentifier: "cellId")
         
-        tableView.register(HomeTableViewCell.self, forCellReuseIdentifier: indentifier)
-        preareTableView()
-        
-        tableView.tableFooterView = UIView()
-        tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
+        self.tableView.estimatedRowHeight = 100
+        self.tableView.rowHeight = UITableViewAutomaticDimension
         
         tableView.sy_header = TextHeaderFooter(
             normalText: "1", // VerticalHintText.headerNomalText
@@ -38,16 +43,16 @@ class SpoorTableViewController: UITableViewController {
             font: UIFont.systemFont(ofSize: 14),
             color: UIColor.black,
             completion: { [weak self] in
-                
+
                 //                let data = StatusViewModel.shared.load(page: 0,pageSize: 20)
-                
+
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                     self?.tableView.sy_header?.endRefreshing()
                     self?.count = 30
                     self?.tableView.reloadData()
                 }
         })
-        
+
         tableView.sy_footer = TextHeaderFooter(
             normalText: VerticalHintText.footerNomalText,
             pullingText: VerticalHintText.footerPullingText,
@@ -68,7 +73,7 @@ class SpoorTableViewController: UITableViewController {
                     self?.tableView.reloadData()
                 }
         })
-        
+
         tableView.sy_header?.beginRefreshing()
     }
     
@@ -78,27 +83,23 @@ class SpoorTableViewController: UITableViewController {
     
     //单元格高度
     func tableView(_ tableView: UITableView, heightForRowAtIndexPath section: Int) -> CGFloat {
-        return 100
-    }
-    
-    //    //在本例中，只有一个分区
-    //    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-    //        return 1;
-    //    }
-    
-    //MARK: 准备表格
-    private func preareTableView(){
-        tableView.estimatedRowHeight = 100
-        tableView.rowHeight = UITableViewAutomaticDimension
+        return UITableViewAutomaticDimension// 250//
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("选中\(indexPath.row)")
     }
     
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = HomeTableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: indentifier)
-        cell.setData(position: indexPath.row)
+        
+        let cell: SpoorTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cellId") as! SpoorTableViewCell
+        
+        cell.userAvatar.show(url:"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1626039801,2689375718&fm=27&gp=0.jpg")
+        cell.userName.text = "No.\(indexPath.row)"
         
         return cell
     }
