@@ -27,11 +27,16 @@ class SpoorTableViewController: UITableViewController {
     }
     
     func initTable() -> Void {
-        let cellNib = UINib(nibName: "SpoorTableViewCell", bundle: nil)
-        tableView.register(cellNib, forCellReuseIdentifier: "cellId")
+        tableView.register(SpoorTableViewCell.self, forCellReuseIdentifier: "SpoorTableViewCell")
+
+        preareTableView()
         
-        self.tableView.estimatedRowHeight = 100
-        self.tableView.rowHeight = UITableViewAutomaticDimension
+        let user = UserEntity()
+        user.name = "SINOTHK"
+        user.headerBg = "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1626039801,2689375718&fm=27&gp=0.jpg"
+        user.avatar = "http://sinothk.com/images/about.png"
+        user.keyword = "创造共享，天下为公"
+        tableView.tableHeaderView = UserAbstractView().show(info: user)
         
         tableView.sy_header = TextHeaderFooter(
             normalText: "1", // VerticalHintText.headerNomalText
@@ -77,30 +82,46 @@ class SpoorTableViewController: UITableViewController {
         tableView.sy_header?.beginRefreshing()
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return count
+    //MARK: - 准备表格
+    private func preareTableView(){
+        tableView.estimatedRowHeight = 100
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
     }
     
-    //单元格高度
-    func tableView(_ tableView: UITableView, heightForRowAtIndexPath section: Int) -> CGFloat {
-        return UITableViewAutomaticDimension// 250//
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return count
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("选中\(indexPath.row)")
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "SpoorTableViewCell") as! SpoorTableViewCell
         
-        let cell: SpoorTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cellId") as! SpoorTableViewCell
+        let spoorEntity = SpoorEntity()
+
+        let user = UserEntity()
+        user.name  = "小鸣\(indexPath.row+1)"
+        user.headerBg = "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1626039801,2689375718&fm=27&gp=0.jpg"
         
-        cell.userAvatar.show(url:"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1626039801,2689375718&fm=27&gp=0.jpg")
-        cell.userName.text = "No.\(indexPath.row)"
+        let position = indexPath.row % 3
+        if position == 0 {
+            user.avatar = "http://sinothk.com/images/about.png"
+        } else if position == 1{
+            user.avatar = "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3777983027,912569445&fm=27&gp=0.jpg"
+        } else {
+            user.avatar = "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2260172143,4248424328&fm=27&gp=0.jpg"
+        }
+    
+        user.keyword = "创造共享，天下为公"
+        spoorEntity.user = user
+
+        spoorEntity.contentTxt = "当时，魏王李泰宠冠诸王，大修第宅，岑文本以为奢侈之风不可长，便上疏极力说明节俭的重要意义，对魏王泰的奢侈挥霍要有所抑制。太宗称赞他的意见，遂赐帛三百段。贞观十七年，加银青光禄大夫。"
         
+        cell.spoorEntity = spoorEntity
+
         return cell
     }
     

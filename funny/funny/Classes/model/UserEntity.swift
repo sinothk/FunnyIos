@@ -10,9 +10,16 @@ import Foundation
 import HandyJSON
 
 class UserEntity: HandyJSON {
-    
     var age: Int = 18
     var name: String?
+    var avatar: String?
+    var headerBg: String?
+    var keyword:String?
+    var sex:Int = 0
+    
+    var email:String?
+    var phoneNum:String?
+    
     
     required init() {}
 }

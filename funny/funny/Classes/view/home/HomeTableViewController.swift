@@ -93,6 +93,7 @@ class HomeTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = HomeTableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: indentifier)
+        
         cell.setData(position: indexPath.row)
         
         return cell

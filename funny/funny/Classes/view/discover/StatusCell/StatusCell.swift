@@ -9,9 +9,6 @@
 import UIKit
 import SnapKit
 
-let StatusCellMargin:CGFloat = 12
-let StatusCellIconWidth:CGFloat = 36
-
 class StatusCell: UITableViewCell {
 
     private lazy var topView: StatusCellTopView = StatusCellTopView()

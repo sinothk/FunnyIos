@@ -37,7 +37,6 @@
 		2441DBB02084997800AFFCC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DBAF2084997800AFFCC1 /* AppDelegate.swift */; };
 		2441DBB72084997800AFFCC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2441DBB62084997800AFFCC1 /* Assets.xcassets */; };
 		2494CAB82090561A00FD0125 /* SpoorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2494CAB62090561A00FD0125 /* SpoorTableViewCell.swift */; };
-		2494CAB92090561A00FD0125 /* SpoorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2494CAB72090561A00FD0125 /* SpoorTableViewCell.xib */; };
 		249B0CEA2089C4EB001DD0DF /* DisclaimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249B0CE82089C4EB001DD0DF /* DisclaimerViewController.swift */; };
 		249B0CEB2089C4EB001DD0DF /* DisclaimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 249B0CE92089C4EB001DD0DF /* DisclaimerViewController.xib */; };
 		24BD736A20887BFD00C7ECE4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD736920887BFD00C7ECE4 /* LoginViewModel.swift */; };
@@ -49,7 +48,10 @@
 		24C106CE208838DF007D7E93 /* HandyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C106BA20883876007D7E93 /* HandyJSON.framework */; };
 		24C106CF208838DF007D7E93 /* HandyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24C106BA20883876007D7E93 /* HandyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		24C152AF208D792D005966C3 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C152AD208D792D005966C3 /* HomeTableViewController.swift */; };
-		24C152B0208D792D005966C3 /* HomeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C152AE208D792D005966C3 /* HomeTableViewController.xib */; };
+		24C1ADA320916FFD00D8A283 /* UserAbstractView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C1ADA220916FFD00D8A283 /* UserAbstractView.swift */; };
+		24C1ADA52091A34B00D8A283 /* SpoorEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C1ADA42091A34B00D8A283 /* SpoorEntity.swift */; };
+		24C1ADA82091AD7A00D8A283 /* SooprTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C1ADA72091AD7A00D8A283 /* SooprTopView.swift */; };
+		24C1ADAA2091BE6C00D8A283 /* SpoorBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C1ADA92091BE6C00D8A283 /* SpoorBottomView.swift */; };
 		24C38815208DB20500378114 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C38813208DB20500378114 /* HomeTableViewCell.swift */; };
 		24CBFA332089E109000C29A3 /* FindPwdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CBFA312089E109000C29A3 /* FindPwdViewController.swift */; };
 		24CBFA342089E109000C29A3 /* FindPwdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24CBFA322089E109000C29A3 /* FindPwdViewController.xib */; };
@@ -64,7 +66,6 @@
 		24F8A97D209013B200B5F600 /* SpoorAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F8A97B209013B200B5F600 /* SpoorAddViewController.swift */; };
 		24F8A97E209013B200B5F600 /* SpoorAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24F8A97C209013B200B5F600 /* SpoorAddViewController.xib */; };
 		24F8A981209013E800B5F600 /* SpoorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F8A97F209013E800B5F600 /* SpoorTableViewController.swift */; };
-		24F8A982209013E800B5F600 /* SpoorTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24F8A980209013E800B5F600 /* SpoorTableViewController.xib */; };
 		24F8A99420902A9B00B5F600 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DE11B1208EC9BC00A4902F /* SnapKit.framework */; };
 		24F8A99520902A9B00B5F600 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24DE11B1208EC9BC00A4902F /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -239,7 +240,6 @@
 		2441DBB62084997800AFFCC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2441DBBB2084997800AFFCC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2494CAB62090561A00FD0125 /* SpoorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpoorTableViewCell.swift; sourceTree = "<group>"; };
-		2494CAB72090561A00FD0125 /* SpoorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpoorTableViewCell.xib; sourceTree = "<group>"; };
 		249B0CE82089C4EB001DD0DF /* DisclaimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerViewController.swift; sourceTree = "<group>"; };
 		249B0CE92089C4EB001DD0DF /* DisclaimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisclaimerViewController.xib; sourceTree = "<group>"; };
 		24BD736920887BFD00C7ECE4 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -250,7 +250,10 @@
 		24C106A72088373B007D7E93 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		24C106AE20883875007D7E93 /* HandyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HandyJSON.xcodeproj; path = "../../../../plugins/HandyJSON-master/HandyJSON.xcodeproj"; sourceTree = "<group>"; };
 		24C152AD208D792D005966C3 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
-		24C152AE208D792D005966C3 /* HomeTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewController.xib; sourceTree = "<group>"; };
+		24C1ADA220916FFD00D8A283 /* UserAbstractView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAbstractView.swift; sourceTree = "<group>"; };
+		24C1ADA42091A34B00D8A283 /* SpoorEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpoorEntity.swift; sourceTree = "<group>"; };
+		24C1ADA72091AD7A00D8A283 /* SooprTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SooprTopView.swift; sourceTree = "<group>"; };
+		24C1ADA92091BE6C00D8A283 /* SpoorBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpoorBottomView.swift; sourceTree = "<group>"; };
 		24C38813208DB20500378114 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		24CBFA312089E109000C29A3 /* FindPwdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPwdViewController.swift; sourceTree = "<group>"; };
 		24CBFA322089E109000C29A3 /* FindPwdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindPwdViewController.xib; sourceTree = "<group>"; };
@@ -266,7 +269,6 @@
 		24F8A97B209013B200B5F600 /* SpoorAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpoorAddViewController.swift; sourceTree = "<group>"; };
 		24F8A97C209013B200B5F600 /* SpoorAddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpoorAddViewController.xib; sourceTree = "<group>"; };
 		24F8A97F209013E800B5F600 /* SpoorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpoorTableViewController.swift; sourceTree = "<group>"; };
-		24F8A980209013E800B5F600 /* SpoorTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpoorTableViewController.xib; sourceTree = "<group>"; };
 		24F8A987209029A800B5F600 /* NextGrowingTextView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NextGrowingTextView.xcodeproj; path = "../../../../plugins/NextGrowingTextView-master/NextGrowingTextView.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -308,6 +310,7 @@
 		2426CA1B2086602A00EDC2A0 /* user */ = {
 			isa = PBXGroup;
 			children = (
+				24C1AD9420916C2C00D8A283 /* HeaderView */,
 				2426CA202086633100EDC2A0 /* MineViewController.swift */,
 				24C1069A20882BF9007D7E93 /* MineViewController.xib */,
 			);
@@ -439,6 +442,23 @@
 			path = homeCell;
 			sourceTree = "<group>";
 		};
+		24C1AD9420916C2C00D8A283 /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				24C1ADA220916FFD00D8A283 /* UserAbstractView.swift */,
+			);
+			path = HeaderView;
+			sourceTree = "<group>";
+		};
+		24C1ADA62091AD5100D8A283 /* spoorItem */ = {
+			isa = PBXGroup;
+			children = (
+				24C1ADA72091AD7A00D8A283 /* SooprTopView.swift */,
+				24C1ADA92091BE6C00D8A283 /* SpoorBottomView.swift */,
+			);
+			path = spoorItem;
+			sourceTree = "<group>";
+		};
 		24DE11A5208EC9BC00A4902F /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -478,6 +498,7 @@
 			children = (
 				243CEEFE20874D1A007650FB /* Status.swift */,
 				24C106A72088373B007D7E93 /* UserEntity.swift */,
+				24C1ADA42091A34B00D8A283 /* SpoorEntity.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -557,7 +578,6 @@
 			children = (
 				24C152B1208D7B36005966C3 /* homeCell */,
 				24C152AD208D792D005966C3 /* HomeTableViewController.swift */,
-				24C152AE208D792D005966C3 /* HomeTableViewController.xib */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -565,12 +585,11 @@
 		24F8A9712090135900B5F600 /* spoor */ = {
 			isa = PBXGroup;
 			children = (
+				24C1ADA62091AD5100D8A283 /* spoorItem */,
 				24F8A97B209013B200B5F600 /* SpoorAddViewController.swift */,
 				24F8A97C209013B200B5F600 /* SpoorAddViewController.xib */,
 				24F8A97F209013E800B5F600 /* SpoorTableViewController.swift */,
-				24F8A980209013E800B5F600 /* SpoorTableViewController.xib */,
 				2494CAB62090561A00FD0125 /* SpoorTableViewCell.swift */,
-				2494CAB72090561A00FD0125 /* SpoorTableViewCell.xib */,
 			);
 			path = spoor;
 			sourceTree = "<group>";
@@ -767,15 +786,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2429D5F5208848B10031872F /* LoginViewController.xib in Resources */,
-				24F8A982209013E800B5F600 /* SpoorTableViewController.xib in Resources */,
 				24F8A97E209013B200B5F600 /* SpoorAddViewController.xib in Resources */,
 				2441DBB72084997800AFFCC1 /* Assets.xcassets in Resources */,
 				24C1069B20882BF9007D7E93 /* MineViewController.xib in Resources */,
 				24BD738A20888EA800C7ECE4 /* readMe.strings in Resources */,
 				24CBFA342089E109000C29A3 /* FindPwdViewController.xib in Resources */,
-				2494CAB92090561A00FD0125 /* SpoorTableViewCell.xib in Resources */,
 				24F0BF772089920700D744C6 /* RegisterViewController.xib in Resources */,
-				24C152B0208D792D005966C3 /* HomeTableViewController.xib in Resources */,
 				249B0CEB2089C4EB001DD0DF /* DisclaimerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -794,6 +810,7 @@
 				24148D8D208F196E0015E374 /* JsonHelper.swift in Sources */,
 				243CEEDD20874772007650FB /* MainViewController.swift in Sources */,
 				24148DA1208F2D570015E374 /* UIImageView.swift in Sources */,
+				24C1ADA52091A34B00D8A283 /* SpoorEntity.swift in Sources */,
 				2426CA222086633100EDC2A0 /* MineViewController.swift in Sources */,
 				243CEEEC20874BAD007650FB /* GIFAnimatedImageView.swift in Sources */,
 				24F2D87B2085A56E0025E6B5 /* UILabel.swift in Sources */,
@@ -810,11 +827,14 @@
 				243CEEF020874BAD007650FB /* TextHeaderFooter.swift in Sources */,
 				24C38815208DB20500378114 /* HomeTableViewCell.swift in Sources */,
 				243CEEFF20874D1A007650FB /* Status.swift in Sources */,
+				24C1ADA320916FFD00D8A283 /* UserAbstractView.swift in Sources */,
 				24C106A82088373B007D7E93 /* UserEntity.swift in Sources */,
 				243CEEF420874BAD007650FB /* CoreTextHeaderFooter.swift in Sources */,
 				24EE7C3F2084FFAA00CE23B0 /* WelcomeViewController.swift in Sources */,
 				24F2D8792085A5630025E6B5 /* UIButton.swift in Sources */,
 				243CEEFB20874C94007650FB /* StatusCellBottomView.swift in Sources */,
+				24C1ADA82091AD7A00D8A283 /* SooprTopView.swift in Sources */,
+				24C1ADAA2091BE6C00D8A283 /* SpoorBottomView.swift in Sources */,
 				243CEEF320874BAD007650FB /* UIScrollView+SYRefresh.swift in Sources */,
 				243CEEED20874BAD007650FB /* GifImagesHeaderFooter.swift in Sources */,
 				24148D8C208F196E0015E374 /* HttpHelperDemo.swift in Sources */,
