@@ -48,8 +48,8 @@ class SpoorTableViewCell: UITableViewCell {
         }
     }
     
-    // MARK:- 设置界面
-    extension SpoorTableViewCell {
+// MARK:- 设置界面
+extension SpoorTableViewCell {
         private func setupUI(){
             // 1.添加组件
             contentView.addSubview(topView)

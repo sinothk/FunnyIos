@@ -19,9 +19,9 @@ class SpoorBottomView: UIView {
             fatalError("init(coder:) has not been implemented")
         }
         
-        private lazy var retweetBtn = UIButton(title: "转发",fontSize: 11,color: UIColor.darkGray,imageName: "item_icon")
-        private lazy var commentBtn = UIButton(title: "评论",fontSize: 11,color: UIColor.darkGray,imageName: "item_icon")
-        private lazy var likeBtn = UIButton(title: "点赞",fontSize: 11,color: UIColor.darkGray,imageName: "item_icon")
+        private lazy var retweetBtn = UIButton(title: "转发",fontSize: 11,color: UIColor.gray,imageName: "item_icon")
+        private lazy var commentBtn = UIButton(title: "评论",fontSize: 11,color: UIColor.gray,imageName: "item_icon")
+        private lazy var likeBtn = UIButton(title: "点赞",fontSize: 11,color: UIColor.gray,imageName: "item_icon")
     }
     
     extension SpoorBottomView{

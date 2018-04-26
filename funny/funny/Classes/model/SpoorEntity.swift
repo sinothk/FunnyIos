@@ -15,4 +15,6 @@ class SpoorEntity{
     
     var contentTxt: String?
     var imgUrl: Array<String>?
+    
+    
 }
