@@ -7,14 +7,14 @@
 //
 
 import Foundation
+import HandyJSON
 
 class SpoorEntity{
-    required init() {}
-    
+
     var user:UserEntity?
     
     var contentTxt: String?
     var imgUrl: Array<String>?
-    
+    var imageSrcs: [String] = []
     
 }

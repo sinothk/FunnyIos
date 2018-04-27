@@ -19,7 +19,7 @@ class MediaTableViewController: UITableViewController {
     
     //MARK: - 准备表格
     private func preareTableView(){
-        tableView.estimatedRowHeight = 100
+        tableView.estimatedRowHeight = 300
         tableView.rowHeight = UITableViewAutomaticDimension
         
         tableView.showsVerticalScrollIndicator = false // 隐藏右边滚动条
@@ -124,6 +124,12 @@ class MediaTableViewController: UITableViewController {
         imgs.append("http://upload1.techweb.com.cn/s/139/2018/0322/1521686348168.jpg")
         
         spoorEntity.imgUrl = imgs
+        
+        let imageSrcs: [String] = ["http://upload1.techweb.com.cn/s/139/2018/0322/1521684876525.jpg",
+                                   "http://upload1.techweb.com.cn/s/139/2018/0322/1521684917565.png",
+                                   "http://upload1.techweb.com.cn/s/139/2018/0322/1521686276466.jpg",
+                                   "http://upload1.techweb.com.cn/s/139/2018/0322/1521686348168.jpg"]
+        spoorEntity.imageSrcs = imageSrcs
         
         cell.spoorEntity = spoorEntity
 

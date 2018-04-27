@@ -36,6 +36,10 @@
 		243CEF0120874D54007650FB /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243CEF0020874D54007650FB /* StatusViewModel.swift */; };
 		2441DBB02084997800AFFCC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441DBAF2084997800AFFCC1 /* AppDelegate.swift */; };
 		2441DBB72084997800AFFCC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2441DBB62084997800AFFCC1 /* Assets.xcassets */; };
+		2442E9AC2092AC7400942695 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9AB2092AC7400942695 /* Constants.swift */; };
+		2442E9BB2092AD3600942695 /* ObjectMapperDateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9B82092AD3600942695 /* ObjectMapperDateTransform.swift */; };
+		2442E9BC2092AD3600942695 /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9B92092AD3600942695 /* DateUtil.swift */; };
+		2442E9BD2092AD3600942695 /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9BA2092AD3600942695 /* ColorUtil.swift */; };
 		2494CAB82090561A00FD0125 /* SpoorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2494CAB62090561A00FD0125 /* SpoorTableViewCell.swift */; };
 		249B0CEA2089C4EB001DD0DF /* DisclaimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249B0CE82089C4EB001DD0DF /* DisclaimerViewController.swift */; };
 		249B0CEB2089C4EB001DD0DF /* DisclaimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 249B0CE92089C4EB001DD0DF /* DisclaimerViewController.xib */; };
@@ -55,6 +59,8 @@
 		24C1ADAE2091C13C00D8A283 /* MediaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C1ADAD2091C13C00D8A283 /* MediaTableViewController.swift */; };
 		24C1ADB12091C39600D8A283 /* MediaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C1ADB02091C39600D8A283 /* MediaViewModel.swift */; };
 		24C1ADB32091C4D000D8A283 /* MediaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C1ADB22091C4D000D8A283 /* MediaTableViewCell.swift */; };
+		24C1ADD02091D6F900D8A283 /* HxNineGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C1ADCE2091D6F900D8A283 /* HxNineGridView.swift */; };
+		24C1ADD12091D6F900D8A283 /* HxNineGridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C1ADCF2091D6F900D8A283 /* HxNineGridViewCell.swift */; };
 		24C38815208DB20500378114 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C38813208DB20500378114 /* HomeTableViewCell.swift */; };
 		24CBFA332089E109000C29A3 /* FindPwdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CBFA312089E109000C29A3 /* FindPwdViewController.swift */; };
 		24CBFA342089E109000C29A3 /* FindPwdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24CBFA322089E109000C29A3 /* FindPwdViewController.xib */; };
@@ -242,6 +248,10 @@
 		2441DBAF2084997800AFFCC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2441DBB62084997800AFFCC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2441DBBB2084997800AFFCC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2442E9AB2092AC7400942695 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2442E9B82092AD3600942695 /* ObjectMapperDateTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectMapperDateTransform.swift; sourceTree = "<group>"; };
+		2442E9B92092AD3600942695 /* DateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
+		2442E9BA2092AD3600942695 /* ColorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
 		2494CAB62090561A00FD0125 /* SpoorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpoorTableViewCell.swift; sourceTree = "<group>"; };
 		249B0CE82089C4EB001DD0DF /* DisclaimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerViewController.swift; sourceTree = "<group>"; };
 		249B0CE92089C4EB001DD0DF /* DisclaimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisclaimerViewController.xib; sourceTree = "<group>"; };
@@ -260,6 +270,8 @@
 		24C1ADAD2091C13C00D8A283 /* MediaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTableViewController.swift; sourceTree = "<group>"; };
 		24C1ADB02091C39600D8A283 /* MediaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewModel.swift; sourceTree = "<group>"; };
 		24C1ADB22091C4D000D8A283 /* MediaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTableViewCell.swift; sourceTree = "<group>"; };
+		24C1ADCE2091D6F900D8A283 /* HxNineGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HxNineGridView.swift; sourceTree = "<group>"; };
+		24C1ADCF2091D6F900D8A283 /* HxNineGridViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HxNineGridViewCell.swift; sourceTree = "<group>"; };
 		24C38813208DB20500378114 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		24CBFA312089E109000C29A3 /* FindPwdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPwdViewController.swift; sourceTree = "<group>"; };
 		24CBFA322089E109000C29A3 /* FindPwdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindPwdViewController.xib; sourceTree = "<group>"; };
@@ -468,6 +480,7 @@
 		24C1ADAC2091C0D300D8A283 /* media */ = {
 			isa = PBXGroup;
 			children = (
+				24C1ADCB2091D62100D8A283 /* NineImages */,
 				24C1ADAD2091C13C00D8A283 /* MediaTableViewController.swift */,
 				24C1ADB22091C4D000D8A283 /* MediaTableViewCell.swift */,
 			);
@@ -480,6 +493,15 @@
 				24C1ADB02091C39600D8A283 /* MediaViewModel.swift */,
 			);
 			path = media;
+			sourceTree = "<group>";
+		};
+		24C1ADCB2091D62100D8A283 /* NineImages */ = {
+			isa = PBXGroup;
+			children = (
+				24C1ADCE2091D6F900D8A283 /* HxNineGridView.swift */,
+				24C1ADCF2091D6F900D8A283 /* HxNineGridViewCell.swift */,
+			);
+			path = NineImages;
 			sourceTree = "<group>";
 		};
 		24DE11A5208EC9BC00A4902F /* Products */ = {
@@ -584,9 +606,13 @@
 		24F2D8772085A4DD0025E6B5 /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				2442E9BA2092AD3600942695 /* ColorUtil.swift */,
+				2442E9B92092AD3600942695 /* DateUtil.swift */,
+				2442E9B82092AD3600942695 /* ObjectMapperDateTransform.swift */,
 				24BD738B208899B600C7ECE4 /* Network */,
 				24F2D8722085A2400025E6B5 /* Extension */,
 				24F2D87C2085A5AD0025E6B5 /* Common.swift */,
+				2442E9AB2092AC7400942695 /* Constants.swift */,
 			);
 			path = tools;
 			sourceTree = "<group>";
@@ -659,7 +685,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "贵州中科恒运";
 				TargetAttributes = {
 					2441DBAB2084997800AFFCC1 = {
@@ -828,8 +854,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2442E9BB2092AD3600942695 /* ObjectMapperDateTransform.swift in Sources */,
+				2442E9BC2092AD3600942695 /* DateUtil.swift in Sources */,
 				24C1ADAE2091C13C00D8A283 /* MediaTableViewController.swift in Sources */,
 				2429D5F4208848B10031872F /* LoginViewController.swift in Sources */,
+				24C1ADD02091D6F900D8A283 /* HxNineGridView.swift in Sources */,
 				24BD738D208899E900C7ECE4 /* NetworkUtil.swift in Sources */,
 				24C1ADB12091C39600D8A283 /* MediaViewModel.swift in Sources */,
 				24F8A97D209013B200B5F600 /* SpoorAddViewController.swift in Sources */,
@@ -841,6 +870,7 @@
 				2426CA222086633100EDC2A0 /* MineViewController.swift in Sources */,
 				243CEEEC20874BAD007650FB /* GIFAnimatedImageView.swift in Sources */,
 				24F2D87B2085A56E0025E6B5 /* UILabel.swift in Sources */,
+				24C1ADD12091D6F900D8A283 /* HxNineGridViewCell.swift in Sources */,
 				24CBFA332089E109000C29A3 /* FindPwdViewController.swift in Sources */,
 				24C1ADB32091C4D000D8A283 /* MediaTableViewCell.swift in Sources */,
 				24148D90208F196E0015E374 /* HttpHelper.swift in Sources */,
@@ -871,11 +901,13 @@
 				2441DBB02084997800AFFCC1 /* AppDelegate.swift in Sources */,
 				243CEEFD20874C94007650FB /* StatusCell.swift in Sources */,
 				24F0BF762089920700D744C6 /* RegisterViewController.swift in Sources */,
+				2442E9BD2092AD3600942695 /* ColorUtil.swift in Sources */,
 				2494CAB82090561A00FD0125 /* SpoorTableViewCell.swift in Sources */,
 				243CEEFC20874C94007650FB /* StatusCellTopView.swift in Sources */,
 				243CEEEE20874BAD007650FB /* GifHeaderFooter.swift in Sources */,
 				24F2D8902085E2010025E6B5 /* DiscoverViewController.swift in Sources */,
 				249B0CEA2089C4EB001DD0DF /* DisclaimerViewController.swift in Sources */,
+				2442E9AC2092AC7400942695 /* Constants.swift in Sources */,
 				24148D8F208F196E0015E374 /* ImageHelper.swift in Sources */,
 				24F8A981209013E800B5F600 /* SpoorTableViewController.swift in Sources */,
 			);
@@ -916,6 +948,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -923,6 +956,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -973,6 +1007,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -980,6 +1015,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

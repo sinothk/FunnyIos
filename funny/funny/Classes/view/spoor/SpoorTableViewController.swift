@@ -106,19 +106,39 @@ class SpoorTableViewController: UITableViewController {
         user.name  = "小鸣\(indexPath.row+1)"
         user.headerBg = "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1626039801,2689375718&fm=27&gp=0.jpg"
         
+        var imageSrcs: [String]? = nil
+        
         let position = indexPath.row % 3
         if position == 0 {
             user.avatar = "http://sinothk.com/images/about.png"
+            
+            imageSrcs = ["http://upload1.techweb.com.cn/s/139/2018/0322/1521684876525.jpg"]
+            
         } else if position == 1{
             user.avatar = "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3777983027,912569445&fm=27&gp=0.jpg"
+            
+            imageSrcs = ["http://upload1.techweb.com.cn/s/139/2018/0322/1521684876525.jpg",
+                                       "http://upload1.techweb.com.cn/s/139/2018/0322/1521684917565.png",
+                                       "http://upload1.techweb.com.cn/s/139/2018/0322/1521686276466.jpg",
+                                       "http://upload1.techweb.com.cn/s/139/2018/0322/1521686348168.jpg"]
         } else {
             user.avatar = "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2260172143,4248424328&fm=27&gp=0.jpg"
+            
+            imageSrcs = ["http://upload1.techweb.com.cn/s/139/2018/0322/1521684876525.jpg",
+                                       "http://upload1.techweb.com.cn/s/139/2018/0322/1521684917565.png",
+                                       "http://upload1.techweb.com.cn/s/139/2018/0322/1521686276466.jpg",
+                                       "http://106.14.132.45:80/app/k_english/file/web/image/2018/02/20/2018-02-20-20-82A0DB130A0436A510E3CA17B4D458FD.jpg",
+                                       "http://106.14.132.45:80/app/k_english/file/web/image/2018/02/20/2018-02-20-20-E50FC3E161CEF970F1F0F78D7B80EB95.jpg",
+                                       "http://106.14.132.45:80/app/k_english/file/web/image/2018/02/20/2018-02-20-20-79E3CACCC31EDCF4FCEAF5F595C0FEBC.jpg",
+                                       "http://upload1.techweb.com.cn/s/139/2018/0322/1521686348168.jpg"]
         }
     
         user.keyword = "创造共享，天下为公"
         spoorEntity.user = user
 
         spoorEntity.contentTxt = "当时，魏王李泰宠冠诸王，大修第宅，岑文本以为奢侈之风不可长，便上疏极力说明节俭的重要意义，对魏王泰的奢侈挥霍要有所抑制。太宗称赞他的意见，遂赐帛三百段。贞观十七年，加银青光禄大夫。"
+        
+        spoorEntity.imageSrcs = imageSrcs!
         
         cell.spoorEntity = spoorEntity
 

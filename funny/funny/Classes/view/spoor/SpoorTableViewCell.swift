@@ -9,8 +9,8 @@
 import UIKit
 
 class SpoorTableViewCell: UITableViewCell {
-//    class StatusCell: UITableViewCell {
     
+        let nineGridView = HxNineGridView()
         private lazy var topView: SooprTopView = SooprTopView()
     
         lazy var centerLabel: UILabel = UILabel(title: "微博正文",fontSize: 14, color: UIColor.darkGray,screenInset: StatusCellMargin)
@@ -21,16 +21,10 @@ class SpoorTableViewCell: UITableViewCell {
             didSet{
                 // 头部
                 topView.userEntity = spoorEntity?.user
-                
                 // 文字内容
                 centerLabel.text = spoorEntity?.contentTxt
-                
                 // 图片
-                
-                //            let num = .count
-//                for ur in (viewModel?.status?.imgUrls)!{
-//                    print(ur)
-//                }
+                nineGridView.imageSrcs = (spoorEntity?.imageSrcs)!
                 
                 // 底部
                 selectionStyle = .none
@@ -54,6 +48,7 @@ extension SpoorTableViewCell {
             // 1.添加组件
             contentView.addSubview(topView)
             contentView.addSubview(centerLabel)
+            self.contentView.addSubview(nineGridView)
             contentView.addSubview(bottomView)
             
             // 2.自动布局
@@ -65,16 +60,24 @@ extension SpoorTableViewCell {
                 make.height.equalTo(StatusCellMargin + StatusCellIconWidth)
             }
             
-            // TODO:-
+            // 文字
             centerLabel.snp.makeConstraints { (make) in
                 make.top.equalTo(topView.snp.bottom).offset(StatusCellMargin)
                 make.left.equalTo(contentView.snp.left).offset(StatusCellMargin)
                 
             }
             
+            // 图片展示
+            nineGridView.snp.makeConstraints { (make) -> Void in
+                make.top.equalTo(centerLabel.snp.bottom).offset(StatusCellMargin)
+                make.leading.equalTo(self.contentView).offset(StatusCellMargin)
+                make.trailing.equalTo(self.contentView).offset(StatusCellMargin)
+            }
+            nineGridView.width = UIScreen.main.bounds.size.width - StatusCellMargin * 2 // 这里减去的值为leading+trailing （根据你自己的排版去调整）
+            
             // 底部视图
             bottomView.snp.makeConstraints { (make) in
-                make.top.equalTo(centerLabel.snp.bottom).offset(StatusCellMargin)
+                make.top.equalTo(nineGridView.snp.bottom).offset(StatusCellMargin)
                 make.left.equalTo(contentView.snp.left)
                 make.right.equalTo(contentView.snp.right)
                 make.height.equalTo(44)
