@@ -8,11 +8,18 @@
 
 import UIKit
 
-class SpoorTableViewCell: UITableViewCell,HxNineGridViewDelegate {
+
+class SpoorTableViewCell: UITableViewCell, HxNineGridViewDelegate {
 
     private lazy var nineGridView = HxNineGridView()
     private lazy var topView: SooprTopView = SooprTopView()
 
+    private var vc: UIViewController? = nil
+    //MARK: 设置控制器
+    func setController(viewController: UIViewController) -> Void {
+        self.vc = viewController
+    }
+    
     lazy var centerLabel: UILabel = UILabel(title: "微博正文",fontSize: 14, color: UIColor.darkGray,screenInset: StatusCellMargin)
 
     private lazy var bottomView: SpoorBottomView = SpoorBottomView()
@@ -21,8 +28,10 @@ class SpoorTableViewCell: UITableViewCell,HxNineGridViewDelegate {
         didSet{
             // 头部
             topView.userEntity = spoorEntity?.user
+            
             // 文字内容
             centerLabel.text = spoorEntity?.contentTxt
+            
             // 图片添加图片url
             nineGridView.imageSrcs = (spoorEntity?.imageSrcs)!
             // 图片点击事件
@@ -45,6 +54,19 @@ class SpoorTableViewCell: UITableViewCell,HxNineGridViewDelegate {
     //MARK: -图片点击事件
     func onClickImageView(imageSrcs: [String], index: Int) {
         print(imageSrcs[index])
+        
+        // 1. create URL Array
+        var images = [SKPhoto]()
+        for imageSrc in imageSrcs {
+            let photo = SKPhoto.photoWithImageURL(imageSrc)
+            photo.shouldCachePhotoURLImage = false // you can use image cache by true(NSCache)
+            images.append(photo)
+        }
+        // 2. create PhotoBrowser Instance, and present.
+        let browser = SKPhotoBrowser(photos: images)
+        browser.initializePageIndex(index)
+        //
+        vc?.present(browser, animated: true, completion: {})
     }
 }
     

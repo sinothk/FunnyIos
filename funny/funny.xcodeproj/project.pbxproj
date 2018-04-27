@@ -43,6 +43,27 @@
 		2442E9CA2092D76600942695 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2442E9C72092D73600942695 /* SVProgressHUD.framework */; };
 		2442E9CB2092D76600942695 /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2442E9C72092D73600942695 /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2442E9D22092E12200942695 /* ProgressHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9D12092E12200942695 /* ProgressHelper.swift */; };
+		2442E9EA2092FA1100942695 /* SKCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9D42092FA1000942695 /* SKCache.swift */; };
+		2442E9EB2092FA1100942695 /* SKAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9D52092FA1000942695 /* SKAnimator.swift */; };
+		2442E9EC2092FA1100942695 /* UIImage+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9D82092FA1000942695 /* UIImage+Rotation.swift */; };
+		2442E9ED2092FA1100942695 /* UIView+Radius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9D92092FA1000942695 /* UIView+Radius.swift */; };
+		2442E9EE2092FA1100942695 /* SKPhotoBrowserOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9DA2092FA1000942695 /* SKPhotoBrowserOptions.swift */; };
+		2442E9EF2092FA1100942695 /* SKLocalPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9DB2092FA1000942695 /* SKLocalPhoto.swift */; };
+		2442E9F02092FA1100942695 /* SKCaptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9DC2092FA1000942695 /* SKCaptionView.swift */; };
+		2442E9F12092FA1100942695 /* SKDetectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9DD2092FA1000942695 /* SKDetectingView.swift */; };
+		2442E9F22092FA1100942695 /* SKPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2442E9DE2092FA1000942695 /* SKPhotoBrowser.bundle */; };
+		2442E9F32092FA1100942695 /* SKPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9DF2092FA1000942695 /* SKPhoto.swift */; };
+		2442E9F42092FA1100942695 /* SKMesurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9E02092FA1000942695 /* SKMesurement.swift */; };
+		2442E9F52092FA1100942695 /* SKDetectingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9E12092FA1000942695 /* SKDetectingImageView.swift */; };
+		2442E9F62092FA1100942695 /* SKPhotoBrowserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9E22092FA1000942695 /* SKPhotoBrowserDelegate.swift */; };
+		2442E9F72092FA1100942695 /* SKZoomingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9E32092FA1100942695 /* SKZoomingScrollView.swift */; };
+		2442E9F82092FA1100942695 /* SKPagingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9E42092FA1100942695 /* SKPagingScrollView.swift */; };
+		2442E9F92092FA1100942695 /* SKCacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9E52092FA1100942695 /* SKCacheable.swift */; };
+		2442E9FA2092FA1100942695 /* SKIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9E62092FA1100942695 /* SKIndicatorView.swift */; };
+		2442E9FB2092FA1100942695 /* SKButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9E72092FA1100942695 /* SKButtons.swift */; };
+		2442E9FC2092FA1100942695 /* SKToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9E82092FA1100942695 /* SKToolbar.swift */; };
+		2442E9FD2092FA1100942695 /* SKPhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9E92092FA1100942695 /* SKPhotoBrowser.swift */; };
+		2442E9FF2092FFB700942695 /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9FE2092FFB700942695 /* Demo.swift */; };
 		2494CAB82090561A00FD0125 /* SpoorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2494CAB62090561A00FD0125 /* SpoorTableViewCell.swift */; };
 		249B0CEA2089C4EB001DD0DF /* DisclaimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249B0CE82089C4EB001DD0DF /* DisclaimerViewController.swift */; };
 		249B0CEB2089C4EB001DD0DF /* DisclaimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 249B0CE92089C4EB001DD0DF /* DisclaimerViewController.xib */; };
@@ -265,6 +286,28 @@
 		2442E9BA2092AD3600942695 /* ColorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
 		2442E9C12092D73600942695 /* SVProgressHUD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SVProgressHUD.xcodeproj; path = "../../../../plugins/SVProgressHUD-master/SVProgressHUD.xcodeproj"; sourceTree = "<group>"; };
 		2442E9D12092E12200942695 /* ProgressHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHelper.swift; sourceTree = "<group>"; };
+		2442E9D42092FA1000942695 /* SKCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCache.swift; sourceTree = "<group>"; };
+		2442E9D52092FA1000942695 /* SKAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKAnimator.swift; sourceTree = "<group>"; };
+		2442E9D62092FA1000942695 /* SKPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKPhotoBrowser.h; sourceTree = "<group>"; };
+		2442E9D82092FA1000942695 /* UIImage+Rotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Rotation.swift"; sourceTree = "<group>"; };
+		2442E9D92092FA1000942695 /* UIView+Radius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Radius.swift"; sourceTree = "<group>"; };
+		2442E9DA2092FA1000942695 /* SKPhotoBrowserOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKPhotoBrowserOptions.swift; sourceTree = "<group>"; };
+		2442E9DB2092FA1000942695 /* SKLocalPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKLocalPhoto.swift; sourceTree = "<group>"; };
+		2442E9DC2092FA1000942695 /* SKCaptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCaptionView.swift; sourceTree = "<group>"; };
+		2442E9DD2092FA1000942695 /* SKDetectingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKDetectingView.swift; sourceTree = "<group>"; };
+		2442E9DE2092FA1000942695 /* SKPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SKPhotoBrowser.bundle; sourceTree = "<group>"; };
+		2442E9DF2092FA1000942695 /* SKPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKPhoto.swift; sourceTree = "<group>"; };
+		2442E9E02092FA1000942695 /* SKMesurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKMesurement.swift; sourceTree = "<group>"; };
+		2442E9E12092FA1000942695 /* SKDetectingImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKDetectingImageView.swift; sourceTree = "<group>"; };
+		2442E9E22092FA1000942695 /* SKPhotoBrowserDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKPhotoBrowserDelegate.swift; sourceTree = "<group>"; };
+		2442E9E32092FA1100942695 /* SKZoomingScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKZoomingScrollView.swift; sourceTree = "<group>"; };
+		2442E9E42092FA1100942695 /* SKPagingScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKPagingScrollView.swift; sourceTree = "<group>"; };
+		2442E9E52092FA1100942695 /* SKCacheable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCacheable.swift; sourceTree = "<group>"; };
+		2442E9E62092FA1100942695 /* SKIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKIndicatorView.swift; sourceTree = "<group>"; };
+		2442E9E72092FA1100942695 /* SKButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKButtons.swift; sourceTree = "<group>"; };
+		2442E9E82092FA1100942695 /* SKToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKToolbar.swift; sourceTree = "<group>"; };
+		2442E9E92092FA1100942695 /* SKPhotoBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKPhotoBrowser.swift; sourceTree = "<group>"; };
+		2442E9FE2092FFB700942695 /* Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo.swift; sourceTree = "<group>"; };
 		2494CAB62090561A00FD0125 /* SpoorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpoorTableViewCell.swift; sourceTree = "<group>"; };
 		249B0CE82089C4EB001DD0DF /* DisclaimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerViewController.swift; sourceTree = "<group>"; };
 		249B0CE92089C4EB001DD0DF /* DisclaimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisclaimerViewController.xib; sourceTree = "<group>"; };
@@ -431,6 +474,7 @@
 		2442E9BF2092D1C100942695 /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				2442E9D32092F76C00942695 /* ImageShow */,
 				24C1ADCB2091D62100D8A283 /* NineImages */,
 			);
 			path = Media;
@@ -463,6 +507,43 @@
 				2442E9D12092E12200942695 /* ProgressHelper.swift */,
 			);
 			path = ProgressView;
+			sourceTree = "<group>";
+		};
+		2442E9D32092F76C00942695 /* ImageShow */ = {
+			isa = PBXGroup;
+			children = (
+				2442E9D72092FA1000942695 /* extensions */,
+				2442E9D52092FA1000942695 /* SKAnimator.swift */,
+				2442E9E72092FA1100942695 /* SKButtons.swift */,
+				2442E9D42092FA1000942695 /* SKCache.swift */,
+				2442E9E52092FA1100942695 /* SKCacheable.swift */,
+				2442E9DC2092FA1000942695 /* SKCaptionView.swift */,
+				2442E9E12092FA1000942695 /* SKDetectingImageView.swift */,
+				2442E9DD2092FA1000942695 /* SKDetectingView.swift */,
+				2442E9E62092FA1100942695 /* SKIndicatorView.swift */,
+				2442E9DB2092FA1000942695 /* SKLocalPhoto.swift */,
+				2442E9E02092FA1000942695 /* SKMesurement.swift */,
+				2442E9E42092FA1100942695 /* SKPagingScrollView.swift */,
+				2442E9DF2092FA1000942695 /* SKPhoto.swift */,
+				2442E9DE2092FA1000942695 /* SKPhotoBrowser.bundle */,
+				2442E9D62092FA1000942695 /* SKPhotoBrowser.h */,
+				2442E9E92092FA1100942695 /* SKPhotoBrowser.swift */,
+				2442E9E22092FA1000942695 /* SKPhotoBrowserDelegate.swift */,
+				2442E9DA2092FA1000942695 /* SKPhotoBrowserOptions.swift */,
+				2442E9E82092FA1100942695 /* SKToolbar.swift */,
+				2442E9E32092FA1100942695 /* SKZoomingScrollView.swift */,
+				2442E9FE2092FFB700942695 /* Demo.swift */,
+			);
+			path = ImageShow;
+			sourceTree = "<group>";
+		};
+		2442E9D72092FA1000942695 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2442E9D82092FA1000942695 /* UIImage+Rotation.swift */,
+				2442E9D92092FA1000942695 /* UIView+Radius.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 		24BD7372208887BA00C7ECE4 /* Toast */ = {
@@ -878,6 +959,7 @@
 				2429D5F5208848B10031872F /* LoginViewController.xib in Resources */,
 				24F8A97E209013B200B5F600 /* SpoorAddViewController.xib in Resources */,
 				2441DBB72084997800AFFCC1 /* Assets.xcassets in Resources */,
+				2442E9F22092FA1100942695 /* SKPhotoBrowser.bundle in Resources */,
 				24C1069B20882BF9007D7E93 /* MineViewController.xib in Resources */,
 				24BD738A20888EA800C7ECE4 /* readMe.strings in Resources */,
 				24CBFA342089E109000C29A3 /* FindPwdViewController.xib in Resources */,
@@ -896,34 +978,44 @@
 				2442E9BB2092AD3600942695 /* ObjectMapperDateTransform.swift in Sources */,
 				2442E9BC2092AD3600942695 /* DateUtil.swift in Sources */,
 				24C1ADAE2091C13C00D8A283 /* MediaTableViewController.swift in Sources */,
+				2442E9FD2092FA1100942695 /* SKPhotoBrowser.swift in Sources */,
+				2442E9FF2092FFB700942695 /* Demo.swift in Sources */,
 				2429D5F4208848B10031872F /* LoginViewController.swift in Sources */,
 				24C1ADD02091D6F900D8A283 /* HxNineGridView.swift in Sources */,
 				24BD738D208899E900C7ECE4 /* NetworkUtil.swift in Sources */,
 				24C1ADB12091C39600D8A283 /* MediaViewModel.swift in Sources */,
 				24F8A97D209013B200B5F600 /* SpoorAddViewController.swift in Sources */,
 				24BD736A20887BFD00C7ECE4 /* LoginViewModel.swift in Sources */,
+				2442E9F82092FA1100942695 /* SKPagingScrollView.swift in Sources */,
 				24148D8D208F196E0015E374 /* JsonHelper.swift in Sources */,
+				2442E9EE2092FA1100942695 /* SKPhotoBrowserOptions.swift in Sources */,
 				243CEEDD20874772007650FB /* MainViewController.swift in Sources */,
 				24148DA1208F2D570015E374 /* UIImageView.swift in Sources */,
 				24C1ADA52091A34B00D8A283 /* SpoorEntity.swift in Sources */,
 				2426CA222086633100EDC2A0 /* MineViewController.swift in Sources */,
 				243CEEEC20874BAD007650FB /* GIFAnimatedImageView.swift in Sources */,
 				24F2D87B2085A56E0025E6B5 /* UILabel.swift in Sources */,
+				2442E9EA2092FA1100942695 /* SKCache.swift in Sources */,
 				24C1ADD12091D6F900D8A283 /* HxNineGridViewCell.swift in Sources */,
 				24CBFA332089E109000C29A3 /* FindPwdViewController.swift in Sources */,
 				24C1ADB32091C4D000D8A283 /* MediaTableViewCell.swift in Sources */,
 				24148D90208F196E0015E374 /* HttpHelper.swift in Sources */,
+				2442E9ED2092FA1100942695 /* UIView+Radius.swift in Sources */,
 				243CEEEF20874BAD007650FB /* GifTextHeaderFooter.swift in Sources */,
+				2442E9EF2092FA1100942695 /* SKLocalPhoto.swift in Sources */,
 				24148D8E208F196E0015E374 /* Person.swift in Sources */,
 				24BD738820888D8800C7ECE4 /* Toast.swift in Sources */,
+				2442E9F72092FA1100942695 /* SKZoomingScrollView.swift in Sources */,
 				24F2D8712085A06B0025E6B5 /* NewVersionViewController.swift in Sources */,
 				243CEEF220874BAD007650FB /* RefreshView.swift in Sources */,
 				24C152AF208D792D005966C3 /* HomeTableViewController.swift in Sources */,
 				243CEF0120874D54007650FB /* StatusViewModel.swift in Sources */,
+				2442E9EB2092FA1100942695 /* SKAnimator.swift in Sources */,
 				243CEEF120874BAD007650FB /* AccessoryView.swift in Sources */,
 				2442E9D22092E12200942695 /* ProgressHelper.swift in Sources */,
 				243CEEF020874BAD007650FB /* TextHeaderFooter.swift in Sources */,
 				24C38815208DB20500378114 /* HomeTableViewCell.swift in Sources */,
+				2442E9F52092FA1100942695 /* SKDetectingImageView.swift in Sources */,
 				243CEEFF20874D1A007650FB /* Status.swift in Sources */,
 				24C1ADA320916FFD00D8A283 /* UserAbstractView.swift in Sources */,
 				24C106A82088373B007D7E93 /* UserEntity.swift in Sources */,
@@ -933,17 +1025,27 @@
 				243CEEFB20874C94007650FB /* StatusCellBottomView.swift in Sources */,
 				24C1ADA82091AD7A00D8A283 /* SooprTopView.swift in Sources */,
 				24C1ADAA2091BE6C00D8A283 /* SpoorBottomView.swift in Sources */,
+				2442E9F42092FA1100942695 /* SKMesurement.swift in Sources */,
 				243CEEF320874BAD007650FB /* UIScrollView+SYRefresh.swift in Sources */,
+				2442E9F62092FA1100942695 /* SKPhotoBrowserDelegate.swift in Sources */,
 				243CEEED20874BAD007650FB /* GifImagesHeaderFooter.swift in Sources */,
 				24148D8C208F196E0015E374 /* HttpHelperDemo.swift in Sources */,
 				243CEEEB20874BAD007650FB /* MyTableViewController.swift in Sources */,
 				24F2D87D2085A5AD0025E6B5 /* Common.swift in Sources */,
+				2442E9F12092FA1100942695 /* SKDetectingView.swift in Sources */,
 				2441DBB02084997800AFFCC1 /* AppDelegate.swift in Sources */,
 				243CEEFD20874C94007650FB /* StatusCell.swift in Sources */,
+				2442E9F92092FA1100942695 /* SKCacheable.swift in Sources */,
 				24F0BF762089920700D744C6 /* RegisterViewController.swift in Sources */,
+				2442E9F32092FA1100942695 /* SKPhoto.swift in Sources */,
+				2442E9FB2092FA1100942695 /* SKButtons.swift in Sources */,
+				2442E9F02092FA1100942695 /* SKCaptionView.swift in Sources */,
 				2442E9BD2092AD3600942695 /* ColorUtil.swift in Sources */,
+				2442E9FC2092FA1100942695 /* SKToolbar.swift in Sources */,
 				2494CAB82090561A00FD0125 /* SpoorTableViewCell.swift in Sources */,
 				243CEEFC20874C94007650FB /* StatusCellTopView.swift in Sources */,
+				2442E9FA2092FA1100942695 /* SKIndicatorView.swift in Sources */,
+				2442E9EC2092FA1100942695 /* UIImage+Rotation.swift in Sources */,
 				243CEEEE20874BAD007650FB /* GifHeaderFooter.swift in Sources */,
 				24F2D8902085E2010025E6B5 /* DiscoverViewController.swift in Sources */,
 				249B0CEA2089C4EB001DD0DF /* DisclaimerViewController.swift in Sources */,

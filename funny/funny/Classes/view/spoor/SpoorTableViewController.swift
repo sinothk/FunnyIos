@@ -141,7 +141,9 @@ class SpoorTableViewController: UITableViewController {
         spoorEntity.imageSrcs = imageSrcs!
         
         cell.spoorEntity = spoorEntity
-
+        
+        cell.setController(viewController: self)
+        
         return cell
     }
     
