@@ -18,7 +18,7 @@ class SooprTopView: UIView {
             
             sexIconView.image = UIImage(named: "ic_weibouser_female")
             
-            timeLabel.text = "3小时前"
+            timeLabel.text = DateUtil.date2Str(date: Date(), format: DateUtil.DateFormat.FORMAT_MDHM.rawValue)//"3小时前"
             
 //            sourceLabel.text = viewModel?.status?.source
             //                        centerLabel.text = "Test"
@@ -37,7 +37,7 @@ class SooprTopView: UIView {
     // 用户头像
     private lazy var iconView: UIImageView = UIImageView(image: UIImage(named:"avatar_test"))
     // 用户名
-    private lazy var nameLabel:UILabel = UILabel(title: "用户名称",fontSize: 14,color: UIColor.darkGray)
+    private lazy var nameLabel:UILabel = UILabel(title: "用户名称",fontSize: 14,color: UIColor.orange)
     // 会员图标
     private lazy var vipIconView: UIImageView = UIImageView(image: UIImage(named:"test_2"))
     // 等级图标
@@ -46,21 +46,26 @@ class SooprTopView: UIView {
     // 性别
     private lazy var sexIconView: UIImageView = UIImageView(image: UIImage(named:"test_2"))
     // 时间
-    private lazy var timeLabel:UILabel = UILabel(title: "刚刚",fontSize: 11,color: UIColor.orange)
+    private lazy var timeLabel:UILabel = UILabel(title: "刚刚", fontSize: 11, color: UIColor.gray)
     // 来源
-    private lazy var sourceLabel:UILabel = UILabel(title: "原创",fontSize: 11)
+    private lazy var sourceLabel:UILabel = UILabel(title: "原创",fontSize: 11, color: UIColor.gray)
 }
 
 extension SooprTopView{
     private func setupUI(){
         backgroundColor = UIColor.white//UIColor(white:0.95, alpha: 1.0)
+        
+        iconView.layer.cornerRadius = StatusCellIconWidth/2
+        iconView.layer.masksToBounds = true
+        iconView.layer.borderWidth = 1  //边框粗细
+        iconView.layer.borderColor = UIColor.orange.cgColor //边框颜色
+        
         // 添加组件
         addSubview(iconView)
         addSubview(nameLabel)
         addSubview(levelIconView)
         addSubview(vipIconView)
-        
-        
+
         addSubview(sexIconView)
         addSubview(timeLabel)
         addSubview(sourceLabel)

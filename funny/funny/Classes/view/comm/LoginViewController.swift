@@ -75,16 +75,27 @@ class LoginViewController: UIViewController {
         let isInputEnable = LoginViewModel.shared.checkEnable(view: self, userCode: userCode!, userPwd: userPwd!)
         let networkOk = NetworkUtil.shared.isEnable()
         
+        ProgressHelper.shared.showLoading(msg: "登录中,请稍后")
+        
         if isInputEnable && networkOk {
             // 执行登录
             LoginViewModel.shared.login(accountStr: userCode!, pwdStr: userPwd!) { (isOk) in
-                if isOk {
-                    NotificationCenter.default.post(
-                        name: NSNotification.Name(rawValue: WBSwitchRootViewControllerNotification),
-                        object: "MainViewController")
-                } else{
-                    print("用户登录失败")
-                }
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
+                    
+                    ProgressHelper.shared.dismiss()
+                    
+                    if isOk {
+                        NotificationCenter.default.post(
+                            name: NSNotification.Name(rawValue: WBSwitchRootViewControllerNotification),
+                            object: "MainViewController")
+                        
+//                        ProgressHelper.shared.tip(msg: "登录成功")
+                    } else{
+                        print("用户登录失败")
+                        ProgressHelper.shared.tip(msg: "登录失败,请稍后重试")
+                    }
+                })
             }
         }
     }

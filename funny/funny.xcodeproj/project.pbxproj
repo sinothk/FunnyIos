@@ -40,6 +40,9 @@
 		2442E9BB2092AD3600942695 /* ObjectMapperDateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9B82092AD3600942695 /* ObjectMapperDateTransform.swift */; };
 		2442E9BC2092AD3600942695 /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9B92092AD3600942695 /* DateUtil.swift */; };
 		2442E9BD2092AD3600942695 /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9BA2092AD3600942695 /* ColorUtil.swift */; };
+		2442E9CA2092D76600942695 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2442E9C72092D73600942695 /* SVProgressHUD.framework */; };
+		2442E9CB2092D76600942695 /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2442E9C72092D73600942695 /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2442E9D22092E12200942695 /* ProgressHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E9D12092E12200942695 /* ProgressHelper.swift */; };
 		2494CAB82090561A00FD0125 /* SpoorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2494CAB62090561A00FD0125 /* SpoorTableViewCell.swift */; };
 		249B0CEA2089C4EB001DD0DF /* DisclaimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249B0CE82089C4EB001DD0DF /* DisclaimerViewController.swift */; };
 		249B0CEB2089C4EB001DD0DF /* DisclaimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 249B0CE92089C4EB001DD0DF /* DisclaimerViewController.xib */; };
@@ -100,6 +103,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 65B2CF1019EF9F6600DA3605;
 			remoteInfo = ImageLoader;
+		};
+		2442E9C62092D73600942695 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2442E9C12092D73600942695 /* SVProgressHUD.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A9D7DD81AB345980039B273;
+			remoteInfo = "SVProgressHUD-Framework";
+		};
+		2442E9C82092D73600942695 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2442E9C12092D73600942695 /* SVProgressHUD.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65F021FC15C857EF0030BBEF;
+			remoteInfo = SVProgressHUD;
+		};
+		2442E9CC2092D76600942695 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2442E9C12092D73600942695 /* SVProgressHUD.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A9D7DD71AB345980039B273;
+			remoteInfo = "SVProgressHUD-Framework";
 		};
 		24C106B920883876007D7E93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -178,20 +202,6 @@
 			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
 			remoteInfo = "SnapKit Tests";
 		};
-		24F8A98C209029A800B5F600 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 24F8A987209029A800B5F600 /* NextGrowingTextView.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4BDB87E51DC0423F00E70D5B;
-			remoteInfo = NextGrowingTextView;
-		};
-		24F8A98E209029A800B5F600 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 24F8A987209029A800B5F600 /* NextGrowingTextView.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4BDB87F81DC0426A00E70D5B;
-			remoteInfo = Demo;
-		};
 		24F8A99620902A9B00B5F600 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 24DE11A4208EC9BC00A4902F /* SnapKit.xcodeproj */;
@@ -210,6 +220,7 @@
 			files = (
 				24148D9B208F1B500015E374 /* ImageLoader.framework in Embed Frameworks */,
 				24C106CF208838DF007D7E93 /* HandyJSON.framework in Embed Frameworks */,
+				2442E9CB2092D76600942695 /* SVProgressHUD.framework in Embed Frameworks */,
 				24F8A99520902A9B00B5F600 /* SnapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -252,6 +263,8 @@
 		2442E9B82092AD3600942695 /* ObjectMapperDateTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectMapperDateTransform.swift; sourceTree = "<group>"; };
 		2442E9B92092AD3600942695 /* DateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
 		2442E9BA2092AD3600942695 /* ColorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
+		2442E9C12092D73600942695 /* SVProgressHUD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SVProgressHUD.xcodeproj; path = "../../../../plugins/SVProgressHUD-master/SVProgressHUD.xcodeproj"; sourceTree = "<group>"; };
+		2442E9D12092E12200942695 /* ProgressHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHelper.swift; sourceTree = "<group>"; };
 		2494CAB62090561A00FD0125 /* SpoorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpoorTableViewCell.swift; sourceTree = "<group>"; };
 		249B0CE82089C4EB001DD0DF /* DisclaimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerViewController.swift; sourceTree = "<group>"; };
 		249B0CE92089C4EB001DD0DF /* DisclaimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisclaimerViewController.xib; sourceTree = "<group>"; };
@@ -287,7 +300,6 @@
 		24F8A97B209013B200B5F600 /* SpoorAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpoorAddViewController.swift; sourceTree = "<group>"; };
 		24F8A97C209013B200B5F600 /* SpoorAddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpoorAddViewController.xib; sourceTree = "<group>"; };
 		24F8A97F209013E800B5F600 /* SpoorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpoorTableViewController.swift; sourceTree = "<group>"; };
-		24F8A987209029A800B5F600 /* NextGrowingTextView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NextGrowingTextView.xcodeproj; path = "../../../../plugins/NextGrowingTextView-master/NextGrowingTextView.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -297,6 +309,7 @@
 			files = (
 				24148D9A208F1B500015E374 /* ImageLoader.framework in Frameworks */,
 				24C106CE208838DF007D7E93 /* HandyJSON.framework in Frameworks */,
+				2442E9CA2092D76600942695 /* SVProgressHUD.framework in Frameworks */,
 				24F8A99420902A9B00B5F600 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +351,9 @@
 		243CEEDE20874BAD007650FB /* pulgin */ = {
 			isa = PBXGroup;
 			children = (
+				2442E9D02092E0E900942695 /* ProgressView */,
+				2442E9C02092D20A00942695 /* Utils */,
+				2442E9BF2092D1C100942695 /* Media */,
 				24148D86208F19310015E374 /* network */,
 				24BD7372208887BA00C7ECE4 /* Toast */,
 				243CEEDF20874BAD007650FB /* Refresh */,
@@ -385,7 +401,7 @@
 			children = (
 				2441DBAE2084997800AFFCC1 /* funny */,
 				2441DBAD2084997800AFFCC1 /* Products */,
-				24F8A987209029A800B5F600 /* NextGrowingTextView.xcodeproj */,
+				2442E9C12092D73600942695 /* SVProgressHUD.xcodeproj */,
 				24148D91208F1B3D0015E374 /* ImageLoader.xcodeproj */,
 				24DE11A4208EC9BC00A4902F /* SnapKit.xcodeproj */,
 				24C106AE20883875007D7E93 /* HandyJSON.xcodeproj */,
@@ -403,13 +419,50 @@
 		2441DBAE2084997800AFFCC1 /* funny */ = {
 			isa = PBXGroup;
 			children = (
-				243CEEDE20874BAD007650FB /* pulgin */,
 				24EE7C342084FCC900CE23B0 /* Classes */,
+				243CEEDE20874BAD007650FB /* pulgin */,
 				2441DBAF2084997800AFFCC1 /* AppDelegate.swift */,
 				2441DBB62084997800AFFCC1 /* Assets.xcassets */,
 				2441DBBB2084997800AFFCC1 /* Info.plist */,
 			);
 			path = funny;
+			sourceTree = "<group>";
+		};
+		2442E9BF2092D1C100942695 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				24C1ADCB2091D62100D8A283 /* NineImages */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		2442E9C02092D20A00942695 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2442E9BA2092AD3600942695 /* ColorUtil.swift */,
+				2442E9B92092AD3600942695 /* DateUtil.swift */,
+				2442E9B82092AD3600942695 /* ObjectMapperDateTransform.swift */,
+				24BD738B208899B600C7ECE4 /* Network */,
+				24F2D8722085A2400025E6B5 /* Extension */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2442E9C22092D73600942695 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2442E9C72092D73600942695 /* SVProgressHUD.framework */,
+				2442E9C92092D73600942695 /* libSVProgressHUD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2442E9D02092E0E900942695 /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				2442E9D12092E12200942695 /* ProgressHelper.swift */,
+			);
+			path = ProgressView;
 			sourceTree = "<group>";
 		};
 		24BD7372208887BA00C7ECE4 /* Toast */ = {
@@ -480,7 +533,6 @@
 		24C1ADAC2091C0D300D8A283 /* media */ = {
 			isa = PBXGroup;
 			children = (
-				24C1ADCB2091D62100D8A283 /* NineImages */,
 				24C1ADAD2091C13C00D8A283 /* MediaTableViewController.swift */,
 				24C1ADB22091C4D000D8A283 /* MediaTableViewCell.swift */,
 			);
@@ -519,7 +571,7 @@
 				24EE7C352084FCFC00CE23B0 /* view */,
 				24EE7C372084FD1000CE23B0 /* viewModel */,
 				24EE7C362084FD0600CE23B0 /* model */,
-				24F2D8772085A4DD0025E6B5 /* tools */,
+				24F2D8772085A4DD0025E6B5 /* comm */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -603,18 +655,13 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		24F2D8772085A4DD0025E6B5 /* tools */ = {
+		24F2D8772085A4DD0025E6B5 /* comm */ = {
 			isa = PBXGroup;
 			children = (
-				2442E9BA2092AD3600942695 /* ColorUtil.swift */,
-				2442E9B92092AD3600942695 /* DateUtil.swift */,
-				2442E9B82092AD3600942695 /* ObjectMapperDateTransform.swift */,
-				24BD738B208899B600C7ECE4 /* Network */,
-				24F2D8722085A2400025E6B5 /* Extension */,
 				24F2D87C2085A5AD0025E6B5 /* Common.swift */,
 				2442E9AB2092AC7400942695 /* Constants.swift */,
 			);
-			path = tools;
+			path = comm;
 			sourceTree = "<group>";
 		};
 		24F2D8832085CBB90025E6B5 /* base */ = {
@@ -645,15 +692,6 @@
 			path = spoor;
 			sourceTree = "<group>";
 		};
-		24F8A988209029A800B5F600 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				24F8A98D209029A800B5F600 /* NextGrowingTextView.framework */,
-				24F8A98F209029A800B5F600 /* Demo.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -672,6 +710,7 @@
 				24C106D1208838DF007D7E93 /* PBXTargetDependency */,
 				24148D9D208F1B500015E374 /* PBXTargetDependency */,
 				24F8A99720902A9B00B5F600 /* PBXTargetDependency */,
+				2442E9CD2092D76600942695 /* PBXTargetDependency */,
 			);
 			name = funny;
 			productName = funny;
@@ -715,12 +754,12 @@
 					ProjectRef = 24148D91208F1B3D0015E374 /* ImageLoader.xcodeproj */;
 				},
 				{
-					ProductGroup = 24F8A988209029A800B5F600 /* Products */;
-					ProjectRef = 24F8A987209029A800B5F600 /* NextGrowingTextView.xcodeproj */;
-				},
-				{
 					ProductGroup = 24DE11A5208EC9BC00A4902F /* Products */;
 					ProjectRef = 24DE11A4208EC9BC00A4902F /* SnapKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 2442E9C22092D73600942695 /* Products */;
+					ProjectRef = 2442E9C12092D73600942695 /* SVProgressHUD.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -743,6 +782,20 @@
 			fileType = wrapper.cfbundle;
 			path = ImageLoaderTests.xctest;
 			remoteRef = 24148D98208F1B3D0015E374 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2442E9C72092D73600942695 /* SVProgressHUD.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SVProgressHUD.framework;
+			remoteRef = 2442E9C62092D73600942695 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2442E9C92092D73600942695 /* libSVProgressHUD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSVProgressHUD.a;
+			remoteRef = 2442E9C82092D73600942695 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		24C106BA20883876007D7E93 /* HandyJSON.framework */ = {
@@ -815,20 +868,6 @@
 			remoteRef = 24DE11B2208EC9BC00A4902F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		24F8A98D209029A800B5F600 /* NextGrowingTextView.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = NextGrowingTextView.framework;
-			remoteRef = 24F8A98C209029A800B5F600 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		24F8A98F209029A800B5F600 /* Demo.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = Demo.app;
-			remoteRef = 24F8A98E209029A800B5F600 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -882,6 +921,7 @@
 				24C152AF208D792D005966C3 /* HomeTableViewController.swift in Sources */,
 				243CEF0120874D54007650FB /* StatusViewModel.swift in Sources */,
 				243CEEF120874BAD007650FB /* AccessoryView.swift in Sources */,
+				2442E9D22092E12200942695 /* ProgressHelper.swift in Sources */,
 				243CEEF020874BAD007650FB /* TextHeaderFooter.swift in Sources */,
 				24C38815208DB20500378114 /* HomeTableViewCell.swift in Sources */,
 				243CEEFF20874D1A007650FB /* Status.swift in Sources */,
@@ -920,6 +960,11 @@
 			isa = PBXTargetDependency;
 			name = ImageLoader;
 			targetProxy = 24148D9C208F1B500015E374 /* PBXContainerItemProxy */;
+		};
+		2442E9CD2092D76600942695 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SVProgressHUD-Framework";
+			targetProxy = 2442E9CC2092D76600942695 /* PBXContainerItemProxy */;
 		};
 		24C106D1208838DF007D7E93 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

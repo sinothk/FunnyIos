@@ -8,39 +8,45 @@
 
 import UIKit
 
-class SpoorTableViewCell: UITableViewCell {
-    
-        let nineGridView = HxNineGridView()
-        private lazy var topView: SooprTopView = SooprTopView()
-    
-        lazy var centerLabel: UILabel = UILabel(title: "微博正文",fontSize: 14, color: UIColor.darkGray,screenInset: StatusCellMargin)
-    
-        private lazy var bottomView: SpoorBottomView = SpoorBottomView()
-    
-        var spoorEntity: SpoorEntity?{
-            didSet{
-                // 头部
-                topView.userEntity = spoorEntity?.user
-                // 文字内容
-                centerLabel.text = spoorEntity?.contentTxt
-                // 图片
-                nineGridView.imageSrcs = (spoorEntity?.imageSrcs)!
-                
-                // 底部
-                selectionStyle = .none
-            }
-        }
-    
-        
-        override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-            super.init(style: style, reuseIdentifier: reuseIdentifier)
-            setupUI()
-        }
-        
-        required init?(coder aDecoder: NSCoder) {
-            fatalError("init(coder:) has not been implemented")
+class SpoorTableViewCell: UITableViewCell,HxNineGridViewDelegate {
+
+    private lazy var nineGridView = HxNineGridView()
+    private lazy var topView: SooprTopView = SooprTopView()
+
+    lazy var centerLabel: UILabel = UILabel(title: "微博正文",fontSize: 14, color: UIColor.darkGray,screenInset: StatusCellMargin)
+
+    private lazy var bottomView: SpoorBottomView = SpoorBottomView()
+
+    var spoorEntity: SpoorEntity?{
+        didSet{
+            // 头部
+            topView.userEntity = spoorEntity?.user
+            // 文字内容
+            centerLabel.text = spoorEntity?.contentTxt
+            // 图片添加图片url
+            nineGridView.imageSrcs = (spoorEntity?.imageSrcs)!
+            // 图片点击事件
+            nineGridView.delegate = self
+            
+            // 底部
+            selectionStyle = .none
         }
     }
+
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        setupUI()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    //MARK: -图片点击事件
+    func onClickImageView(imageSrcs: [String], index: Int) {
+        print(imageSrcs[index])
+    }
+}
     
 // MARK:- 设置界面
 extension SpoorTableViewCell {
