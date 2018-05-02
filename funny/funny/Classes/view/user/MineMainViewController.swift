@@ -11,25 +11,47 @@ import UIKit
 class MineMainViewController: UIViewController , UITableViewDelegate, UITableViewDataSource{
     
     var tableView:UITableView?
-    var allnames:Dictionary<Int, [String]>?
+//    var allnames:Dictionary<Int, [String]>?
+    
+    var settingListData :Dictionary<Int, [SettingItemEntity]>?
+
     var adHeaders:[String]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //初始化数据，这一次数据，我们放在属性列表文件里
-        self.allnames =  [
-            0:[String]([
-                "UILabel 标签",
-                "UITextField 文本框",
-                "UIButton 按钮"]),
-            
-            1:[String]([
-                "UIDatePiker 日期选择器",
-                "UIToolbar 工具条",
-                "UITableView 表格视图"])
-        ];
+//        //初始化数据，这一次数据，我们放在属性列表文件里
+//        self.allnames =  [
+//            0:[String]([
+//                "UILabel 标签",
+//                "UITextField 文本框",
+//                "UIButton 按钮"]),
+//
+//            1:[String]([
+//                "UIDatePiker 日期选择器",
+//                "UIToolbar 工具条",
+//                "UITableView 表格视图"]),
+//
+//            2:[String]([
+//                "设置"])
+//        ];
    
+        self.settingListData = [
+            0:[SettingItemEntity]([
+                SettingItemEntity(icon: "ic_nav_nearby_normal", name: "关注"),
+                SettingItemEntity(icon: "ic_nav_nearby_normal", name: "粉丝")
+                ]),
+            1:[SettingItemEntity]([
+                SettingItemEntity(icon: "ic_nav_nearby_normal", name: "足迹"),
+                SettingItemEntity(icon: "ic_nav_nearby_normal", name: "我的访客"),
+                SettingItemEntity(icon: "ic_nav_nearby_normal", name: "我的收藏")
+                ]),
+            2:[SettingItemEntity]([
+                SettingItemEntity(icon: "ic_nav_nearby_normal", name: "设置")
+                ])
+        ]
+        
+        
         //创建表视图
         self.tableView = UITableView(frame:self.view.frame, style:.grouped)
         self.tableView!.delegate = self
@@ -41,10 +63,10 @@ class MineMainViewController: UIViewController , UITableViewDelegate, UITableVie
         user.headerBg = "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1626039801,2689375718&fm=27&gp=0.jpg"
         user.avatar = "http://sinothk.com/images/about.png"
         user.keyword = "创造共享，天下为公"
-        self.tableView?.tableHeaderView = UserAbstractView().show(info: user)
+        self.tableView?.tableHeaderView = UserTopView().show(info: user)
         
         //创建一个重用的单元格
-        self.tableView!.register(UITableViewCell.self, forCellReuseIdentifier: "SwiftCell")
+        self.tableView!.register(SettingTableViewCell.self, forCellReuseIdentifier: "SettingTableViewCell")
         preareTableView()
         self.view.addSubview(self.tableView!)
         
@@ -60,12 +82,12 @@ class MineMainViewController: UIViewController , UITableViewDelegate, UITableVie
     
     //在本例中，有2个分区
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2;
+        return (self.settingListData?.count) ?? 0;
     }
     
     //返回表格行数（也就是返回控件数）
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let data = self.allnames?[section]
+        let data = self.settingListData?[section]//self.allnames?[section]
         return data!.count
     }
 
@@ -74,17 +96,19 @@ class MineMainViewController: UIViewController , UITableViewDelegate, UITableVie
         //            //为了提供表格显示性能，已创建完成的单元需重复使用
         //            let identify:String =
         //同一形式的单元格重复使用，在声明时已注册
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SwiftCell", for: indexPath)
+//        let cell:SettingTableViewCell = tableView.dequeueReusableCell(withIdentifier: "SettingTableViewCell", for: indexPath) as! SettingTableViewCell
+        let cell = SettingTableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "SettingTableViewCell")
+        
         // 底部
         cell.selectionStyle = .none
+        cell.accessoryType = .disclosureIndicator  //显示右箭头
         
         let secno = indexPath.section
-
-        cell.accessoryType = .disclosureIndicator  //显示右箭头
-            
-        var data = self.allnames?[secno]
-        cell.textLabel?.text = data![indexPath.row]
-
+        let row = indexPath.row
+        
+        let itemInfo: SettingItemEntity = self.settingListData![secno]![row]
+        
+        cell.itemInfo = itemInfo
         return cell
     }
     
@@ -93,6 +117,9 @@ class MineMainViewController: UIViewController , UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("选中\(indexPath.row)")
+        
+        let secno = indexPath.section
+        
+        print("选中\(secno)组，\(indexPath.row)")
     }
 }

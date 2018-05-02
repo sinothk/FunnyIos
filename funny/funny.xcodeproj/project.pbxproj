@@ -91,6 +91,9 @@
 		24D71B692099504A00275447 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D71B672099504A00275447 /* UserViewController.swift */; };
 		24D71B6E20996A2800275447 /* UserViewCellHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24D71B6D20996A2800275447 /* UserViewCellHeader.xib */; };
 		24D71B702099780200275447 /* MineMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D71B6F2099780200275447 /* MineMainViewController.swift */; };
+		24D71B7220999A5100275447 /* UserTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D71B7120999A5100275447 /* UserTopView.swift */; };
+		24D71B7620999EA100275447 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D71B7520999EA100275447 /* SettingTableViewCell.swift */; };
+		24D71B7A2099AC7100275447 /* SettingItemEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D71B792099AC7100275447 /* SettingItemEntity.swift */; };
 		24EE7C3F2084FFAA00CE23B0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EE7C3E2084FFAA00CE23B0 /* WelcomeViewController.swift */; };
 		24F0BF762089920700D744C6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F0BF742089920700D744C6 /* RegisterViewController.swift */; };
 		24F0BF772089920700D744C6 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24F0BF752089920700D744C6 /* RegisterViewController.xib */; };
@@ -337,6 +340,9 @@
 		24D71B672099504A00275447 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		24D71B6D20996A2800275447 /* UserViewCellHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserViewCellHeader.xib; sourceTree = "<group>"; };
 		24D71B6F2099780200275447 /* MineMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineMainViewController.swift; sourceTree = "<group>"; };
+		24D71B7120999A5100275447 /* UserTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTopView.swift; sourceTree = "<group>"; };
+		24D71B7520999EA100275447 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		24D71B792099AC7100275447 /* SettingItemEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItemEntity.swift; sourceTree = "<group>"; };
 		24DE11A4208EC9BC00A4902F /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = "../../../../plugins/SnapKit-develop/SnapKit.xcodeproj"; sourceTree = "<group>"; };
 		24EE7C3E2084FFAA00CE23B0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		24F0BF742089920700D744C6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -607,6 +613,7 @@
 			isa = PBXGroup;
 			children = (
 				24C1ADA220916FFD00D8A283 /* UserAbstractView.swift */,
+				24D71B7120999A5100275447 /* UserTopView.swift */,
 			);
 			path = HeaderView;
 			sourceTree = "<group>";
@@ -644,6 +651,22 @@
 				24C1ADCF2091D6F900D8A283 /* HxNineGridViewCell.swift */,
 			);
 			path = NineImages;
+			sourceTree = "<group>";
+		};
+		24D71B7320999C9400275447 /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				24D71B7420999C9E00275447 /* cells */,
+			);
+			path = setting;
+			sourceTree = "<group>";
+		};
+		24D71B7420999C9E00275447 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				24D71B7520999EA100275447 /* SettingTableViewCell.swift */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 		24DE11A5208EC9BC00A4902F /* Products */ = {
@@ -687,6 +710,7 @@
 				243CEEFE20874D1A007650FB /* Status.swift */,
 				24C106A72088373B007D7E93 /* UserEntity.swift */,
 				24C1ADA42091A34B00D8A283 /* SpoorEntity.swift */,
+				24D71B792099AC7100275447 /* SettingItemEntity.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -712,6 +736,7 @@
 		24EE7C392084FD9A00CE23B0 /* comm */ = {
 			isa = PBXGroup;
 			children = (
+				24D71B7320999C9400275447 /* setting */,
 				24EE7C3E2084FFAA00CE23B0 /* WelcomeViewController.swift */,
 				24F2D8702085A06B0025E6B5 /* NewVersionViewController.swift */,
 				2429D5F2208848B10031872F /* LoginViewController.swift */,
@@ -994,6 +1019,7 @@
 				24C1ADD02091D6F900D8A283 /* HxNineGridView.swift in Sources */,
 				24BD738D208899E900C7ECE4 /* NetworkUtil.swift in Sources */,
 				24C1ADB12091C39600D8A283 /* MediaViewModel.swift in Sources */,
+				24D71B7220999A5100275447 /* UserTopView.swift in Sources */,
 				24F8A97D209013B200B5F600 /* SpoorAddViewController.swift in Sources */,
 				24BD736A20887BFD00C7ECE4 /* LoginViewModel.swift in Sources */,
 				2442E9F82092FA1100942695 /* SKPagingScrollView.swift in Sources */,
@@ -1023,6 +1049,7 @@
 				2442E9EB2092FA1100942695 /* SKAnimator.swift in Sources */,
 				243CEEF120874BAD007650FB /* AccessoryView.swift in Sources */,
 				2442E9D22092E12200942695 /* ProgressHelper.swift in Sources */,
+				24D71B7620999EA100275447 /* SettingTableViewCell.swift in Sources */,
 				243CEEF020874BAD007650FB /* TextHeaderFooter.swift in Sources */,
 				24C38815208DB20500378114 /* HomeTableViewCell.swift in Sources */,
 				2442E9F52092FA1100942695 /* SKDetectingImageView.swift in Sources */,
@@ -1033,6 +1060,7 @@
 				24EE7C3F2084FFAA00CE23B0 /* WelcomeViewController.swift in Sources */,
 				24F2D8792085A5630025E6B5 /* UIButton.swift in Sources */,
 				243CEEFB20874C94007650FB /* StatusCellBottomView.swift in Sources */,
+				24D71B7A2099AC7100275447 /* SettingItemEntity.swift in Sources */,
 				24C1ADA82091AD7A00D8A283 /* SooprTopView.swift in Sources */,
 				24C1ADAA2091BE6C00D8A283 /* SpoorBottomView.swift in Sources */,
 				2442E9F42092FA1100942695 /* SKMesurement.swift in Sources */,

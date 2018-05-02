@@ -44,5 +44,10 @@ struct Constants{
         // 通用字体色系-tab
         static let COLOR_TXT_TAB_NORMAL = 0x969696
         static let COLOR_TXT_TAB_FOCUSED = 0xffffff
+        
+        // ============
+        static let COLOR_TXT_ITEM_L1 = UIColor.darkGray
+        static let COLOR_TXT_ITEM_L2 = UIColor.gray
+        static let COLOR_TXT_ITEM_L3 = UIColor.lightGray
     }
 }
